@@ -1,0 +1,33 @@
+- tier_name: Faculty
+  # size: large
+  description: |-
+    description
+  sponsors:
+    - name: Gianmarco Mengaldo
+      profile: https://github.com/
+      github: true
+      photo: true
+      email: true
+
+- tier_name: PhD Students
+  # description: |-
+  #   This is the description for the Gold Tier
+  sponsors:
+    - name: Chenyu DONG
+      profile: https://github.com/
+      github: true
+    - name: Jiawen WEI
+      profile: https://github.com/
+      github: true
+
+- tier_name: Master Students
+  # size: small
+  # description: |-
+  #   This is the description for the Standard Tier.
+
+  #   It has the size set to 'small'.
+
+  #   The profile is not required so if it's not set the link will not appear.
+  sponsors:
+    - name: xxx xxx
+    - name: xxx xxx
