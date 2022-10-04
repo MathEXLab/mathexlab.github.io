@@ -1,0 +1,18 @@
+- label: Selected Publications
+  items:
+    - name: PySPOD
+      link: /docs/selectedpub/installation/
+    - name: InterpretTime
+      link: /docs/selectedpub/configuration/
+
+
+- label: List of Publication
+  items:
+    - name: 2022
+      link: /docs/listpub/listpub2022/
+    - name: 2021
+      link: /docs/listpub/footer-navigation/
+    - name: 2019
+      link: /docs/listpub/menubar/
+
+
