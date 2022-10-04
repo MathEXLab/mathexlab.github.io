@@ -1,6 +1,5 @@
 ---
 title: Explainable AI for time series
-subtitle: We develop post-hoc interpretability solution for neural networks
 layout: research
 image: /img/Interpret.png
 rating: 3
