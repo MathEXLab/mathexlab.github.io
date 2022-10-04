@@ -1,42 +1,85 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Site Settings
+lang: en
+title: Mengaldo Lab
+tagline: Mengaldo Lab
+# email: your-email@domain.com
+# theme: bulma-clean-theme
+# remote_theme: chrisrhymes/bulma-clean-theme
+description: >
+  This is our research website.
+# baseurl: "/bulma-clean-theme"
+# url: "https://www.csrhymes.com"
+permalink: pretty
+favicon: /img/NUS_logo.jpg
+# favicon: /path/to/favicon.png
+# gh_sponsor: chrisrhymes
+#hide_share_buttons: true
+#theme_color: '#eeeeee'
+# fixed_navbar: top
+#direction: one of <ltr, rtl, auto>, default: ltr
 
-# Site settings
-title: The Allan Lab
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Website of the AllanLab.
-baseurl: ""
-url: ""
+# paginate: 5
+# paginate_path: "/blog/page:num"
 
-include:
-  - .htaccess
-  - _pages
+# Disqus Comments
+disqus:
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  # shortname: my_disqus_shortname
+  shortname: csrhymes
+
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown-parser-gfm
+  - jekyll-redirect-from
+
+exclude: 
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+livereload: true
 
 sass:
-  sass_dir: _sass
+  style: compressed
+  source_dir: _sass
 
-# Conversion
+google_analytics: UA-code-here
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      # author: "C.S. Rhymes"
+      layout: post
+      image: https://via.placeholder.com/1200x800
+      show_sidebar: true
+
 markdown: kramdown
 highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
 
+footer_menu: example_footer_menu
 
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+collections:
+  research: 
+    output: true
+    layout: research
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
