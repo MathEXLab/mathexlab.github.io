@@ -2,7 +2,7 @@
 title: High-fidelity simulation of complex systems
 subtitle: We develop high-fidelity solvers for partial differential equations
 layout: research
-image: /img/SIAM_review
+image: /img/SIAM_review.jpg
 rating: 3
 ---
 
