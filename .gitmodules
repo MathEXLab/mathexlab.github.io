@@ -1,0 +1,3 @@
+[submodule "bulma-clean-theme"]
+	path = bulma-clean-theme
+	url = https://github.com/chrisrhymes/bulma-clean-theme.git
