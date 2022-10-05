@@ -2,7 +2,7 @@
 title       : Welcome to LMCE
 subtitle    : Laboratory for Mathematical and Computational Engineering
 layout      : home_page
-hero_height : is-small
+hero_height : is-medium
 image       : /img/campus-bg.jpg
 hero_image  : /img/campus-bg.jpg
 hero_darken : false
