@@ -7,6 +7,7 @@ image       : /img/campus-bg.jpg
 hero_image  : /img/campus-bg.jpg
 hero_darken : false
 show_sidebar: false
+menu_bar    : true
 ---
 
 # About us
