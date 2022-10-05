@@ -8,7 +8,19 @@ layout: home_default
 {% endif %}
 
 <div class="content">
-  {{ content }}
+  <h1 About us </h1>
+    <p>
+      We are developing new computational and mathematical tools, to addressing
+      the challenges predicting the behaviour of complex systems in engineering
+      and applied science.
+
+      Adopting a multidisciplinary approach, we aim to unlock fundamental
+      understanding of different aspects governing our interconnected world,
+      from geophysics to engineering applications.
+
+      Our research team is led by Principal Investigator
+      [Dr Gianmarco Mengaldo]().
+    </p>
 </div>
 
 <div class="columns is-multiline">
@@ -20,9 +32,13 @@ layout: home_default
   <div class="column is-6">
     <p class="title is-3">{{ page.title }}</p>
     <p class="subtitle is-3">{{ page.subtitle }}</p>
-    <p class="title is-4 has-text-right">{{ page.price }}</p>
+    <p class="title is-4 has-text-left">{{ page.price }}</p>
     {% if page.product_code %}
     <p class="subtitle is-5 has-text-right">{{ page.product_code }}</p>
+    {% endif %}
+
+    {% if page.rating %}
+      {% include rating.html rating=page.rating %}
     {% endif %}
 
     {% if page.features %}
@@ -44,7 +60,8 @@ layout: home_default
   <div class="column is-12">
     <p class="title is-4">Description</p>
     <div class="content">
-      {{ content }}
+      Hello
     </div>
   </div>
+
 </div>
