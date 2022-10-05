@@ -26,7 +26,7 @@ layout: home_default
 
 <div class="columns is-multiline">
   <div class="column is-4">
-    <figure class="image is-4by3">
+    <figure class="image is-4by3; is-active">
       <img src="{{ page.image }}" />
     </figure>
   </div>
@@ -46,26 +46,6 @@ layout: home_default
       <img src="{{ page.image }}" />
     </figure>
   </div>
-  <!-- <div class="column is-6">
-    <p class="title is-3"> About us </p>
-    <p class="subtitle is-3"> ciao </p>
-    <p class="title is-4 has-text-left"> hello </p>
-    {% if page.features %}
-    <div class="content">
-      {% for feature in page.features %}
-      <p>
-        <span class="icon">
-            {% if feature.icon %}
-            <i class="fas {{ feature.icon }}"></i>
-            {% else %}
-            <i class="fas fa-circle fa-xs"></i>
-            {% endif %}
-        </span>
-        <span>{{ feature.label }}</span></p>
-      {% endfor %}
-    </div>
-    {% endif %}
-  </div> -->
 
   <div class="column is-12">
     <p class="title is-4">Description</p>
