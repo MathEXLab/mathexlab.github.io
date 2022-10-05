@@ -37,7 +37,7 @@ plugins:
   - kramdown-parser-gfm
   - jekyll-redirect-from
 
-exclude: 
+exclude:
   - Gemfile
   - clean-theme.gemspec
   - Gemfile.lock
@@ -78,7 +78,7 @@ highlighter: rouge
 footer_menu: example_footer_menu
 
 collections:
-  research: 
+  research:
     output: true
     layout: research
     image: https://via.placeholder.com/800x600
