@@ -7,6 +7,7 @@ layout: home_default
   {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
 {% endif %}
 
+<!--  ABOUT US -->
 <div class="content">
   <h3> About us </h3>
   <hr>
@@ -23,7 +24,6 @@ layout: home_default
       <a href="https://scholar.google.com/citations?user=WAeydbgAAAAJ&hl=en">Dr Gianmarco Mengaldo </a>.
     </p>
 </div>
-
 <div class="columns is-multiline">
   <div class="column is-4">
     <figure class="image is-4by3">
@@ -40,5 +40,21 @@ layout: home_default
       <img src="{{ page.image }}" />
     </figure>
   </div>
-
 </div>
+
+<!-- NEWS -->
+<div class="content">
+    <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
+    {% if page.series %}
+        {% include series.html %}
+    {% endif %}
+    {{ content }}
+</div>
+<div class="tags">
+    {% for tag in page.tags %}
+      {% include tag.html tag=tag %}
+    {% endfor %}
+</div>
+{% unless site.hide_share_buttons %}
+{% include share-buttons.html %}
+{% endunless %}
