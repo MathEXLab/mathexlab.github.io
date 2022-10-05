@@ -5,7 +5,7 @@ layout      : landing_page
 hero_height : is-large
 image       : /img/campus-bg.jpg
 hero_image  : /img/campus-bg.jpg
-hero_darken : true
+hero_darken : false
 show_sidebar: false
 ---
 
