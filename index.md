@@ -10,7 +10,7 @@ show_sidebar: false
 menu_bar    : true
 ---
 
-<h1 About us </h1>
+## About us
 <hr>
 LMCE is a multidisciplinary group that develops and implements computational
 tools across different fields. Our current focus is on leveraging applied
