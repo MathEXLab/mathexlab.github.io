@@ -1,8 +1,7 @@
 ---
 title: Mengaldo Lab
 subtitle: Welcome to Mengaldo Lab!
-# layout: landing_page
-layout: page
+layout: landing_page
 # callouts: home_callouts
 show_sidebar: false
 image: /img/campus-bg.jpg
