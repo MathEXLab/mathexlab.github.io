@@ -3,25 +3,13 @@
 - name: RESEARCH
   link: /research/
 - name: PUBLICATIONS
-  link: /publications/
+  link: /#
+  dropdown:
+    - name: Publications
+    - link: /publications/
+    - name: Selected publications
+    - link: /publications/
+    - name: Covers
+    - link: /publications/
 - name: NEWS
   link: /news/
-
-
-# - name: GitHub
-#   link: /blog/
-# - name: Example Pages
-#   link: /#
-#   dropdown:
-#     - name: Landing Page With Callouts
-#       link: /landing/
-#     - name: Sponsors Page
-#       link: /sponsors/
-#     - name: Image Gallery
-#       link: /gallery/
-#     - name: Products
-#       link: /products/
-#     - name: Recipe Page
-#       link: /example-recipe/
-#     - name: Showcase
-#       link: /showcase/

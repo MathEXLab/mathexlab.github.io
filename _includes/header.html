@@ -2,10 +2,8 @@
      x-data="{ openNav: false }">
   <div class="container">
     <div class="navbar-brand">
-      <a href="{{ site.baseurl }}/" class="navbar-item">Home</a>
-      <!-- <a <img src="/img/NUS_logo.jpg"
-              width="30" height="30" alt="">
-      </a> -->
+      <a href="{{ site.baseurl }}/" class="navbar-item">
+          <img src="/img/Logo.jpeg" width="60" height="60" alt=""></a>
       <a role="button" class="navbar-burger burger"
          aria-label="menu"
          aria-expanded="false"
@@ -21,9 +19,9 @@
         {% if site.data.navigation %}
         {% for item in site.data.navigation %}
           {% if item.dropdown %}
-          <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+          <div class="navbar-item has-dropdown is-hoverable is-outlined is-link {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
             <a href="{{ item.link | relative_url }}"
-               class="navbar-link is-link is-outlined {% if page.url contains item.link %}is-active{% endif %}">{{ item.name }}
+               class="navbar-link {% if page.url contains item.link %}is-active{% endif %}">{{ item.name }}
             </a>
             <div class="navbar-dropdown">
               {% for subitem in item.dropdown %}
@@ -54,7 +52,7 @@
         <span class="navbar-item" href="mailto:mpegim@nus.edu.sg">
           <a class="button is-link is-outlined">
             <span class="icon">
-              <i class="fab fa-envelope fa-2x"></i>
+              <i class="fab fa-envelope"></i>
             </span>
             <span>Contact us</span>
           </a>

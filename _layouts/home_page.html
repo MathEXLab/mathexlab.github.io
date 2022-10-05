@@ -3,10 +3,58 @@ layout: home_default
 ---
 
 {% if page.toc %}
-    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+  {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+  {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
 {% endif %}
 
+<!--  ABOUT US -->
 <div class="content">
+  <h3> About us </h3>
+  <hr>
+    <p align="justify" style="font-size:130%;">
+      We are developing new computational and mathematical tools, to addressing
+      the challenges predicting the behaviour of complex systems in engineering
+      and applied science.
+
+      Adopting a multidisciplinary approach, we aim to unlock fundamental
+      understanding of different aspects governing our interconnected world,
+      from geophysics to engineering applications.
+
+      Our research team is led by Principal Investigator
+      <a href="https://scholar.google.com/citations?user=WAeydbgAAAAJ&hl=en">Dr Gianmarco Mengaldo </a>.
+    </p>
+</div>
+<div class="columns is-multiline">
+  <div class="column is-4">
+    <figure class="image is-4by3">
+      <img src="{{ page.image }}" />
+    </figure>
+  </div>
+  <div class="column is-4">
+    <figure class="image is-4by3">
+      <img src="{{ page.image }}" />
+    </figure>
+  </div>
+  <div class="column is-4">
+    <figure class="image is-4by3">
+      <img src="{{ page.image }}" />
+    </figure>
+  </div>
+</div>
+
+<!-- NEWS -->
+<div class="content">
+    <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
+    {% if page.series %}
+        {% include series.html %}
+    {% endif %}
     {{ content }}
 </div>
+<div class="tags">
+    {% for tag in page.tags %}
+      {% include tag.html tag=tag %}
+    {% endfor %}
+</div>
+{% unless site.hide_share_buttons %}
+{% include share-buttons.html %}
+{% endunless %}
