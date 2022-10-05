@@ -30,8 +30,8 @@
             <div class="columns is-multiline">
                 {% if page.menubar_toc %}
                 <div class="column is-4-desktop is-4-tablet">
-                    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-                    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+                  {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+                  {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
                 </div>
                 {% elsif page.menubar %}
                 <div class="column is-4-desktop is-4-tablet">
@@ -53,15 +53,6 @@
             </div>
         </div>
     </section>
-
-    {% if page.toc %}
-        {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-        {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
-    {% endif %}
-
-    <div class="content">
-        {{ content }}
-    </div>
 
     <!-- FOOTER -->
     {% include footer.html %}
