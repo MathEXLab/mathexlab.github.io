@@ -10,8 +10,8 @@ show_sidebar: false
 menu_bar    : true
 ---
 
-# About us
-
+<h1 About us </h1>
+<hr>
 LMCE is a multidisciplinary group that develops and implements computational
 tools across different fields. Our current focus is on leveraging applied
 mathematics, data science, and computer engineering to build predictive
