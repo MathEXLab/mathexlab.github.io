@@ -1,13 +1,13 @@
-# - name: Mengaldo Bio
-#   link: /showcase/
-- name: Team
+- name: TEAM
   link: /team/
-- name: Research
+- name: RESEARCH
   link: /research/
-- name: Publications
-  link: /docs/
-- name: News
-  link: /showcase/
+- name: PUBLICATIONS
+  link: /publications/
+- name: NEWS
+  link: /news/
+
+
 # - name: GitHub
 #   link: /blog/
 # - name: Example Pages
