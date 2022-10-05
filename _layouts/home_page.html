@@ -8,7 +8,6 @@ layout: home_default
 {% endif %}
 
 <div class="content">
-  <h1 About us </h1>
     <p>
       We are developing new computational and mathematical tools, to addressing
       the challenges predicting the behaviour of complex systems in engineering
@@ -30,16 +29,10 @@ layout: home_default
     </figure>
   </div>
   <div class="column is-6">
-    <p class="title is-3">{{ page.title }}</p>
+    <p class="title is-3"> About us </p>
     <p class="subtitle is-3">{{ page.subtitle }}</p>
     <p class="title is-4 has-text-left">{{ page.price }}</p>
     {% if page.product_code %}
-    <p class="subtitle is-5 has-text-right">{{ page.product_code }}</p>
-    {% endif %}
-
-    {% if page.rating %}
-      {% include rating.html rating=page.rating %}
-    {% endif %}
 
     {% if page.features %}
     <div class="content">
