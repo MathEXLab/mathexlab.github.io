@@ -1,7 +1,7 @@
 ---
 title: Mengaldo Lab
 subtitle: Welcome to Mengaldo Lab!
-layout: page
+layout: landing_page
 # callouts: home_callouts
 show_sidebar: false
 image: /img/campus-bg.jpg
@@ -18,7 +18,7 @@ If you are interested, <a href="mailto:mpegim@nus.edu.sg">get in touch with us</
 
 ## News
 
-This demo site showcases the available page layout options. 
+This demo site showcases the available page layout options.
 
 * **2 research engineer positions** available to work at the intersection between machine learning and dynamical systems.
 * **New SIAM Review article** now available online on novel numerical technologies for high-fidelity aerodynamic simulations.
