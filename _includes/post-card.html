@@ -1,7 +1,11 @@
 <div class="card">
     {% if post.image %}
     <div class="card-image">
-        <img src="{{ post.image }}" alt="{{ post.title }}">
+        <img src="{{ post.image }}" alt="{{ post.title }}"
+             style="object-fit:contain;
+                    max-width: 100%;
+                    height: auto;"
+        />
     </div>
     {% else %}
     <header class="card-header">
