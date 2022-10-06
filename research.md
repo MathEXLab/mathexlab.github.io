@@ -2,6 +2,7 @@
 title: Research
 subtitle: Current Research Projects
 layout: product-category
+# layout: research
 show_sidebar: false
 ---
 
