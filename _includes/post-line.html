@@ -1,19 +1,10 @@
 <div class="line">
     <header class="line-header">
-      <div class="columns is-multiline">
-        <div class="column is-6">
-          <a href="{{ site.baseurl }}{{ post.url }}"
-            class="button is-primary"> {{ post.title}}
-          </a>
-        </div>
-        <div class="column is-6">
-          <img src="{{ post.image }}"
-               style="height: 30px;
-                      width: auto;
-                      float: center;"/>
-        </div>
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" {{ post.summary | markdownify }} </a>
+      <a href="{{ site.baseurl }}{{ post.url }}"
+        class="button is-primary"> {{ post.title}}
+      </a>
+      <a href="{{ site.baseurl }}{{ post.url }}"
+         class="button is-link"> {{ post.summary | markdownify }} </a>
       <b> {{ post.date | date: "%b %-d, %Y" }} </b>
     </header>
 </div>
