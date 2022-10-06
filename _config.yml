@@ -51,7 +51,7 @@ livereload: true
 sass:
   style: compressed
   source_dir: _sass
-  
+
 google_analytics: UA-code-here
 markdown: kramdown
 highlighter: rouge
@@ -74,8 +74,8 @@ defaults:
       show_sidebar: true
 
 
-
-footer_menu: example_footer_menu
+series: news
+footer_menu: footer_menu
 
 collections:
   research:
