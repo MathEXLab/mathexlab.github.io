@@ -48,12 +48,13 @@ exclude:
   - vendor/ruby/
 
 livereload: true
-
 sass:
   style: compressed
   source_dir: _sass
-
+  
 google_analytics: UA-code-here
+markdown: kramdown
+highlighter: rouge
 
 defaults:
   -
@@ -72,7 +73,13 @@ defaults:
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
 
-markdown: kramdown
-highlighter: rouge
+
 
 footer_menu: example_footer_menu
+
+collections:
+  research:
+    output: true
+    layout: research
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
