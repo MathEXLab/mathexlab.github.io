@@ -3,7 +3,9 @@
       <a href="{{ site.baseurl }}{{ post.url }}"
         class="button is-primary"> {{ post.title}}
       </a>
-      <a href="{{ site.baseurl }}{{ post.url }}" {{ post.summary | markdownify }} </a>
-      <b> {{ post.date | date: "%b %-d, %Y" }} </b>
+      <div>
+        <a href="{{ site.baseurl }}{{ post.url }}" {{ post.summary | markdownify }} </a>
+        <b> {{ post.date | date: "%b %-d, %Y" }} </b>
+      </div>
     </header>
 </div>
