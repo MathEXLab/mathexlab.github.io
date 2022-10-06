@@ -14,7 +14,7 @@ favicon: /img/NUS_logo.jpg
 
 paginate: 5
 destination: "_site/news/"
-paginate_path: "/news/page:num/"
+paginate_path: "_site/news/page:num/"
 
 # Disqus Comments
 disqus:
