@@ -1,13 +1,17 @@
 <div class="line">
     <header class="line-header">
-        <a href="{{ site.baseurl }}{{ post.url }}"
-           class="button is-primary"> {{ post.title}}
-        </a>
-        <img src="{{ post.image }}"
-            style="object-fit:contain;
-                    max-width: 100%;
-                    height: auto;"
-        />
+      <div class="columns is-multiline">
+        <div class="column is-4">
+          <a href="{{ site.baseurl }}{{ post.url }}"
+            class="button is-primary"> {{ post.title}}
+          </a>
+        </div>
+        <div class="column is-4">
+          <img src="{{ post.image }}"
+              style="object-fit:contain;
+                      max-width: 100%;
+                      height: auto;"/>
+        </div>
         {{ post.summary | markdownify }}
         {{ post.date | date: "%b %-d, %Y" }}
     </header>
