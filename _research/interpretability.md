@@ -1,7 +1,7 @@
 ---
 title: Explainable AI for time series
 layout: research
-image: /img/Interpret.png
+image: /images/Interpret.png
 rating: 3
 ---
 

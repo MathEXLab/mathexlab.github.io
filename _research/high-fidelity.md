@@ -1,7 +1,7 @@
 ---
 title: High-fidelity simulation of complex systems
 layout: research
-image: /img/SIAM_review.jpg
+image: /images/SIAM_review.jpg
 rating: 3
 ---
 

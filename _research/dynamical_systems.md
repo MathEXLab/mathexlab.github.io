@@ -2,7 +2,7 @@
 title: Dynamical systems
 subtitle: Extreme weather prediction
 layout: research
-image: /img/Dynamical.jpg
+image: /images/Dynamical.jpg
 rating: 3
 ---
 
