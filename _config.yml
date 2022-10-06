@@ -3,16 +3,10 @@ lang: en
 title: Mengaldo Lab
 tagline: Mengaldo Lab
 # email: your-email@domain.com
-# theme: bulma-clean-theme
-# remote_theme: chrisrhymes/bulma-clean-theme
 description: >
   This is our research website.
-# baseurl: "/bulma-clean-theme"
-# url: "https://www.csrhymes.com"
 permalink: pretty
 favicon: /img/NUS_logo.jpg
-
-# gh_sponsor: chrisrhymes
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 # fixed_navbar: top
