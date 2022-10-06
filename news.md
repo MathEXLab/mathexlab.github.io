@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: news
 title: News
 # subtitle: An example sponsors page
 show_sidebar: false
