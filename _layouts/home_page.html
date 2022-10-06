@@ -43,12 +43,8 @@ layout: home_default
 </div>
 
 <!-- NEWS -->
-<div class="content">
-    <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
-    {% if page.series %}
-        {% include series.html %}
-    {% endif %}
-    {{ content }}
+<div class="column is-12-desktop is-12-tablet">
+    {% include latest-posts.html %}
 </div>
 <div class="tags">
     {% for tag in page.tags %}
