@@ -1,7 +1,6 @@
 ---
 layout: news
 title: News
-# subtitle: An example sponsors page
 show_sidebar: true
 ---
 
