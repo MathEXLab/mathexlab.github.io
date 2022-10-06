@@ -7,20 +7,16 @@ layout: default
 <div class="columns is-multiline">
     <div class="column is-12">
         {% include pagination.html %}
-        ciao
     </div>
     {% for post in paginator.posts %}
     <div class="column is-12">
         {% include post-card.html %}
-        hello
     </div>
     {% endfor %}
     <div class="column is-12">
         {% include pagination.html %}
-        !
     </div>
     <div class="column is-12">
         {% include subscribe.html %}
-        ?
     </div>
 </div>
