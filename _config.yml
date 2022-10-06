@@ -57,7 +57,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      show_sidebar: false
+      show_sidebar: true
   -
     scope:
       path: ""
