@@ -10,7 +10,11 @@ hero_darken: true
 show_sidebar: false
 tags: hiring research singapore
 series: news
-
+summary: |-
+    Mengaldo’s Laboratory at [National University of Singapore](https://cde.nus.edu.sg)
+    is looking for a self-motivated, proactive and creative
+    Research Assistant in dynamical system theory and machine
+    learning for extreme weather forecasting applications.
 ---
 
 ### Description

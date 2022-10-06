@@ -3,7 +3,12 @@
         <a href="{{ site.baseurl }}{{ post.url }}"
            class="button is-primary"> {{ post.title}}
         </a>
-        <p>{{ post.excerpt }}</p>
-        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+        <img src="{{ post.image }}"
+            style="object-fit:contain;
+                    max-width: 100%;
+                    height: auto;"
+        />
+        {{ post.summary | markdownify }}
+        {{ post.date | date: "%b %-d, %Y" }}
     </header>
 </div>
