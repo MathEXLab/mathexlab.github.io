@@ -13,8 +13,7 @@ favicon: /img/NUS_logo.jpg
 # direction: one of <ltr, rtl, auto>, default: ltr
 
 paginate: 5
-destination: "/posts/"
-paginate_path: "/_posts/page:num/"
+paginate_path: "/page:num/"
 
 # Disqus Comments
 disqus:
