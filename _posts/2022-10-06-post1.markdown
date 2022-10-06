@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "post1"
-subtitle: An example of post
-description:
+title: Hiring
+subtitle: Hiring 1 research fellow and 1 research assistant
+description: We have two openings; 1 research fellow and 1 rsearch assistant.
 date: 2022-10-06
-hero_image: /bulma-clean-theme/images/blog-post-series.jpg
-image: /bulma-clean-theme/images/blog-post-series.jpg
+image: /images/hiring.jpg
+hero_image: false
 hero_height: is-small
 hero_darken: true
-tags: bulma-clean-theme jekyll blog
+tags: hiring research singapore
 series: news
 show_sidebar: false
 ---
