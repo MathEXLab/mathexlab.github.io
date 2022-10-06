@@ -9,6 +9,7 @@ hero_height: is-small
 hero_darken: true
 show_sidebar: false
 tags: hiring research singapore
+series: news
 
 ---
 
