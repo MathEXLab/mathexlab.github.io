@@ -3,25 +3,7 @@
         <a class="card-header-title"
            href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}
         </a>
+        <p>{{ post.excerpt }}</p>
+        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
     </header>
-    <div class="line-content">
-        <div class="content">
-            <a class="title is-4"
-               href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}
-            </a>
-            {% if post.summary %}
-                {{ post.summary | markdownify }}
-            {% else %}
-                <p>{{ post.excerpt }}</p>
-            {% endif %}
-        </div>
-        <div class="has-text-centered">
-            <a href="{{ site.baseurl }}{{ post.url }}"
-               class="button is-primary"> Read more
-            </a>
-        </div>
-    </div>
-    <footer class="line-footer">
-        <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
-    </footer>
 </div>
