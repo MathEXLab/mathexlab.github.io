@@ -10,11 +10,12 @@
           <img src="{{ post.image }}"
                style="height: 50px;
                       width: auto;
-                      float: right;
-                      margin-right: 15px;"/>
+                      float: center;"/>
         </div>
       </div>
-      {{ post.summary | markdownify }}
+      <a href="{{ site.baseurl }}{{ post.url }}"
+        class="button is-primary"> {{ post.summary | markdownify }}
+      </a>
       {{ post.date | date: "%b %-d, %Y" }}
     </header>
 </div>
