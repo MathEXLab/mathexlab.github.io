@@ -7,9 +7,11 @@
           </a>
         </div>
         <div class="column is-6">
-          hello 
           <img src="{{ post.image }}"
-               style="height: 50px; width: auto;"/>
+               style="height: 50px;
+                      width: auto;
+                      float: right;
+                      margin-right: 15px;"/>
         </div>
       </div>
       {{ post.summary | markdownify }}
