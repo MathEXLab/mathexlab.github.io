@@ -1,11 +1,12 @@
 <div class="line">
     <header class="line-header">
+      <span class="icon"><i class="fas {{post.icon}}"></i> </span>
+      <span <b> {{ post.date | date: "%b %-d, %Y" }} </b> </span>
       <a href="{{ site.baseurl }}{{ post.url }}"
         class="button is-primary"> {{ post.title}}
       </a>
       <div>
         <a href="{{ site.baseurl }}{{ post.url }}" {{ post.summary | markdownify }} </a>
-        <b> {{ post.date | date: "%b %-d, %Y" }} </b>
       </div>
     </header>
 </div>

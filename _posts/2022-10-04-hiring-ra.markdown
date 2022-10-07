@@ -4,6 +4,7 @@ title: Hiring Research Assistant
 subtitle: Explainable AI for time series
 date: 2022-10-04
 image: /images/hiring.jpg
+icon: fa-people
 hero_image: false
 hero_height: is-small
 hero_darken: true
