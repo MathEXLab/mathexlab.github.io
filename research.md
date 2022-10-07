@@ -1,9 +1,7 @@
 ---
 title: Research
 subtitle: Current Research Projects
-layout: product-category
-# layout: research
+layout: research
+hide_hero: true
 show_sidebar: false
 ---
-
-This is an example products page you can use to display a simple listing of your products and their ratings and reviews.
