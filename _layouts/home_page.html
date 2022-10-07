@@ -84,15 +84,22 @@ layout: home_default
           <img src="/images/SIAMrev.jpg" alt="" class="image"/>
       </div>
       <div class="column is-4">
-        <div class="figure" style="is-clickable">
-          <img src="/images/JCP.jpg"/>
-          <!-- <div class="overlay">
-            <div class="text">Hello World</div>
-          </div> -->
-        </div>
+        <figure class="image is-4x3 is-clickable is-hoverable">
+          <img v-bind:src="/images/JCP.jpg"/>
+          @mouseover="hover = true"
+          @mouseleave="hover = false"
+          @click="playAudio()"
+          :style="hover ? {opacity:0.5} : {opacity:1}" alt=""/>
+        </figure>
       </div>
     </div>
-
+    <figure class="image is-128x128">
+    <img v-bind:src="currentTrack.coverURL"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    @click="playAudio()"
+    :style="hover ? {opacity:0.5} : {opacity:1}" alt=""/>
+    </figure>
     <p align="left" style="font-size:120%;">
       We are always looking for <b> new passionate Postdoctoral
       scholars, PhD and Master students</b> to join the team!
