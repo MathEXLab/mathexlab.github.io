@@ -1,12 +1,16 @@
 <div class="line">
     <header class="line-header">
-      <span class="icon-text">
-        <span class="icon"><i class="fas fa-users-line"></i> </span>
-        <span <b> {{ post.date | date: "%b %-d, %Y" }} </b> </span>
-      </span>
-      <a href="{{ site.baseurl }}{{ post.url }}"
-        class="button is-primary"> {{ post.title}}
-      </a>
+      <div>
+        <span class="icon-text">
+          <span class="icon"><i class="fas fa-users-line"></i> </span>
+          <span <b> {{ post.date | date: "%b %-d, %Y" }} </b> </span>
+        </span>
+      </div>
+      <div>
+        <a href="{{ site.baseurl }}{{ post.url }}"
+          class="button is-primary"> {{ post.title}}
+        </a>
+      </div>
       <div>
         <a href="{{ site.baseurl }}{{ post.url }}" {{ post.summary | markdownify }} </a>
       </div>
