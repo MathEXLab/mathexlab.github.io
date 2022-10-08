@@ -73,8 +73,5 @@ defaults:
 footer_menu: footer_menu
 
 collections:
-  research:
-    output: true
-    layout: research
-    image: https://via.placeholder.com/800x600
-    show_sidebar: false
+  - research
+  - team
