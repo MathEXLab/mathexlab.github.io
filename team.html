@@ -1,5 +1,13 @@
 ---
-layout: default
+layout      : default
+title       : Research Group
+subtitle    :
+sponsors    : team_menu
+show_sidebar: false
+hero_height : is-small
+hero_image  :
+hero_darken : false
+show_sidebar: false
 ---
 
 
@@ -50,11 +58,6 @@ layout: default
 </div>
 <div class="columns is-multiline">
   <div class="column is-4">
-    {% for staff_member in site.team_members %}
-      <h2>{{ staff_member.name }}</h2>
-      <img src="{{ staff_member.image }}" class="is-rounded is-clickable"/>
-      <p>{{ staff_member.bio | markdownify }}</p>
-    {% endfor %}
     <div class="content">
       <center>
         <figure class="image is-128x128">
