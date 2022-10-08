@@ -8,7 +8,6 @@ hero_image : /images/campus-bg.jpg
 hero_darken: false
 # hero_link:
 # hero_link_text:
-# hero_image:
 # hero_caption:
 show_sidebar: false
 ---
