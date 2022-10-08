@@ -66,6 +66,22 @@ layout: default
             <p>Some text in the Modal..</p>
           </div>
         </div>
+        <script>
+        var modal = document.getElementById("modal");
+        var btn = document.getElementById("btn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
       </center>
     </div>
     <div class="content">
@@ -116,16 +132,32 @@ layout: default
     <div class="content">
       <center>
         <figure class="image is-128x128">
-          <img id="btn" src="/images/hiring.jpg" alt="" class="is-rounded is-clickable"/>
+          <img id="jiawen-wei-btn" src="/images/hiring.jpg" alt="" class="is-rounded is-clickable"/>
         </figure>
         <!-- The Modal -->
-        <div id="modal" class="modal">
+        <div id="jiawen-wei-modal" class="modal">
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
             <p>Some text in the Modal..</p>
           </div>
         </div>
+        <script>
+        var modal = document.getElementById("jiawen-wei-modal");
+        var btn = document.getElementById("jiawen-wei-btn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
       </center>
     </div>
     <div class="content">
@@ -168,16 +200,32 @@ layout: default
     <div class="content">
       <center>
         <figure class="image is-128x128">
-          <img id="btn" src="/images/hiring.jpg" alt="" class="is-rounded is-clickable"/>
+          <img id="chenyu-dong-btn" src="/images/hiring.jpg" alt="" class="is-rounded is-clickable"/>
         </figure>
         <!-- The Modal -->
-        <div id="modal" class="modal">
+        <div id="chenyu-dong-modal" class="modal">
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
             <p>Some text in the Modal..</p>
           </div>
         </div>
+        <script>
+        var modal = document.getElementById("chenyu-dong-modal");
+        var btn = document.getElementById("chenyu-dong-btn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
       </center>
     </div>
     <div class="content">
@@ -239,20 +287,3 @@ layout: default
 {% unless site.hide_share_buttons %}
 {% include share-buttons.html %}
 {% endunless %}
-
-<script>
-var modal = document.getElementById("modal");
-var btn = document.getElementById("btn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
