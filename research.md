@@ -1,5 +1,5 @@
 ---
-layout      : default
+layout      : research
 title       : Current research areas
 subtitle    :
 sponsors    : research_menu

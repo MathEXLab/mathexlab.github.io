@@ -1,5 +1,5 @@
 ---
-layout      : default
+layout      : publications
 title       : Publications
 subtitle    :
 sponsors    : publications_menu

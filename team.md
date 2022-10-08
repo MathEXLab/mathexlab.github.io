@@ -1,5 +1,5 @@
 ---
-layout      : default
+layout      : team
 title       : Research Group
 subtitle    :
 sponsors    : team_menu
