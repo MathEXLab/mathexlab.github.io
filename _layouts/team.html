@@ -4,7 +4,6 @@ layout: default
 
 
 <style>
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -19,7 +18,6 @@ layout: default
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -28,7 +26,6 @@ layout: default
   width: 80%;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
@@ -53,7 +50,7 @@ layout: default
 </div>
 <div class="columns is-multiline">
   <div class="column is-4">
-    {% for staff_member in site.team %}
+    {% for staff_member in site.team_members %}
       <h2>{{ staff_member.name }}</h2>
       <img src="{{ staff_member.image }}" class="is-rounded is-clickable"/>
       <p>{{ staff_member.bio | markdownify }}</p>
@@ -69,7 +66,7 @@ layout: default
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p>{{site.team.gianmarco-mengaldo.bio}}</p>
+            <p>{{site.team_members.gianmarco-mengaldo.bio}}</p>
           </div>
         </div>
         <script>
