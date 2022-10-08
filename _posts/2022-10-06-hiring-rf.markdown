@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news
 title: Hiring Postdoctoral Scholar
 subtitle: Extreme weather forecasting
 icon: users
@@ -10,7 +10,7 @@ hero_height: is-small
 hero_darken: true
 show_sidebar: false
 tags: hiring research singapore
-series: news
+#series: news
 summary: |-
     Looking for a self-motivated, proactive and creative
     Postdoctoral Scholar in dynamical system theory and

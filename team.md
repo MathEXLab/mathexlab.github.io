@@ -1,9 +1,11 @@
 ---
-layout: page
-title: Research Group
-# subtitle: An example sponsors page
-sponsors: team_menu
+layout      : team
+title       : Research Group
+subtitle    :
+sponsors    : team_menu
+show_sidebar: false
+hero_height : is-small
+hero_image  :
+hero_darken : false
 show_sidebar: false
 ---
-
-<!-- [View the sponsors docs](/bulma-clean-theme/docs/sponsors/) -->
