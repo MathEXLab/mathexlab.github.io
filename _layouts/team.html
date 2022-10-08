@@ -1,24 +1,184 @@
 ---
 layout: default
 ---
-<div class="columns is-multiline">
+---
+layout: default
+---
 
-  <div class="content">
-    {{ content }}
+<style type="text/css">
+  ul {
+    list-style: none;
+    padding: 1px 1px 1px 30px
+  }
+  ul li {
+    font-size: 120%;
+    margin-left: 10px;
+    list-style-type: circle;
+  }
+</style>
+
+<style>
+.container_for_overlay {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container_for_overlay:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+<div class="columns is-multiline">
+  <!-- PI -->
+  <div class="column is-12">
+    <div class="content">
+      <h2> Faculty </h2>
+      <hr>
+    </div>
+  </div>
+  <div class="column is-3">
+    <div class="content">
+      <h3> Gianmarco Mengaldo </h3>
+      <a href="/team/gianmarco-mengaldo">
+        <div class="container_for_overlay">
+          <img src="/images/gianmarco-mengaldo.jpg" alt="" class="image"/>
+          <div class="overlay">
+            <div class="text">Link</div>
+          </div>
+        </div>
+      </a>
+      <p align="center" style="font-size:100%;">
+        <a href="https://scholar.google.com/citations?user=WAeydbgAAAAJ&hl=en">
+          <span class="icon"><i class="fas fa-google"></i></span>
+        </a>
+        <a href="https://www.researchgate.net/profile/Gianmarco-Mengaldo">
+          <span class="icon"><i class="fas fa-researchgate"></i></span>
+        </a>
+        <a href="https://www.linkedin.com/in/gianmarco-m/">
+          <span class="icon"><i class="fas fa-linkedin"></i></span>
+        </a>
+        <a href="https://github.com/mengaldo">
+          <span class="icon"><i class="fas fa-github"></i></span>
+        </a>
+      </p>
+    </div>
   </div>
 
-  <div class="tags">
+  <!-- PhD students -->
+  <div class="column is-12">
+    <div class="content">
+      <h2> PhD students </h2>
+      <hr>
+    </div>
+  </div>
+  <div class="column is-3">
+    <div class="content">
+      <h3> Jiawen WEI </h3>
+      <a href="/team/jiawen-wei">
+        <div class="container_for_overlay">
+          <img src="/images/jiawen-wei.jpg" alt="" class="image"/>
+          <div class="overlay">
+            <div class="text">Link</div>
+          </div>
+        </div>
+      </a>
+      <p align="center" style="font-size:100%;">
+        <a href="https://scholar.google.com/citations?user=WAeydbgAAAAJ&hl=en">
+          <span class="icon"><i class="fas fa-google"></i></span>
+        </a>
+        <a href="https://www.researchgate.net/profile/Gianmarco-Mengaldo">
+          <span class="icon"><i class="fas fa-researchgate"></i></span>
+        </a>
+        <a href="https://www.linkedin.com/in/gianmarco-m/">
+          <span class="icon"><i class="fas fa-linkedin"></i></span>
+        </a>
+        <a href="https://github.com/mengaldo">
+          <span class="icon"><i class="fas fa-github"></i></span>
+        </a>
+      </p>
+    </div>
+    <div class="column is-3">
+      <div class="content">
+        <h3> Chenyu DONG </h3>
+        <a href="/team/chenyu-dong">
+          <div class="container_for_overlay">
+            <img src="/images/chenyu-dong.jpg" alt="" class="image"/>
+            <div class="overlay">
+              <div class="text">Link</div>
+            </div>
+          </div>
+        </a>
+        <p align="center" style="font-size:100%;">
+          <a href="https://scholar.google.com/citations?user=WAeydbgAAAAJ&hl=en">
+            <span class="icon"><i class="fas fa-google"></i></span>
+          </a>
+          <a href="https://www.researchgate.net/profile/Gianmarco-Mengaldo">
+            <span class="icon"><i class="fas fa-researchgate"></i></span>
+          </a>
+          <a href="https://www.linkedin.com/in/gianmarco-m/">
+            <span class="icon"><i class="fas fa-linkedin"></i></span>
+          </a>
+          <a href="https://github.com/mengaldo">
+            <span class="icon"><i class="fas fa-github"></i></span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master students -->
+  <div class="column is-12">
+    <div class="content">
+      <h2> Master students </h2>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Undergraduate students -->
+  <div class="column is-12">
+    <div class="content">
+      <h2> Undergraduate students </h2>
+      <hr>
+    </div>
+  </div>
+
+
+<div class="tags">
     {% for tag in page.tags %}
       {% include tag.html tag=tag %}
     {% endfor %}
-  </div>
-
-  {% unless site.hide_share_buttons %}
-  {% include share-buttons.html %}
-  {% endunless %}
-
-  {% if site.disqus.shortname %}
-    {% include disqus.html %}
-  {% endif %}
-
 </div>
+{% unless site.hide_share_buttons %}
+{% include share-buttons.html %}
+{% endunless %}
