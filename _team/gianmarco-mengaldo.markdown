@@ -1,8 +1,7 @@
 ---
-title: Gianmarco MENGALDO
+name: Gianmarco MENGALDO
 image: /images/gianmarco-mengaldo.jpg
-
-description: Dr Gianmarco Mengaldo is an assistant professor in the Department
+bio: Dr Gianmarco Mengaldo is an assistant professor in the Department
 of Mechanical Engineering at National University of Singapore
 (Singapore), and Honorary Research Fellow at Imperial College
 London (United Kingdom). He received his BSc and MSc in Aerospace

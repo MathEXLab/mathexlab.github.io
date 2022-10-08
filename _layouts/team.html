@@ -56,7 +56,7 @@ layout: default
     <div class="content">
       <center>
         <figure class="image is-128x128">
-          <img id="btn" src="{{site.team.gianmarco-mengaldo.image}}" alt=""
+          <img id="btn" src={{site.team.gianmarco-mengaldo.image}} alt=""
                class="is-rounded is-clickable"/>
         </figure>
         <!-- The Modal -->
@@ -64,7 +64,7 @@ layout: default
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <p>{{site.team.gianmarco-mengaldo.bio}}</p>
           </div>
         </div>
         <script>
@@ -86,7 +86,7 @@ layout: default
       </center>
     </div>
     <div class="content">
-      <center> Dr Gianmarco MENGALDO </center>
+      <center> Dr {{site.team.gianmarco-mengaldo.name}} </center>
     </div>
     <div class="content">
       <center> <a href="mailto:mpegim@nus.edu.sg"> mpegim@nus.edu.sg </a> </center>
