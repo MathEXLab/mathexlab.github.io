@@ -4,7 +4,6 @@ layout: default
 
 
 <style>
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -45,22 +44,7 @@ layout: default
 }
 </style>
 
-<script>
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+
 
 
 
@@ -74,10 +58,10 @@ window.onclick = function(event) {
     <div class="content">
       <center>
         <figure class="image is-128x128">
-          <img id="myBtn" src="/images/gianmarco-mengaldo.jpg" alt="" class="is-rounded"/>
+          <img id="btn" src="/images/gianmarco-mengaldo.jpg" alt="" class="is-rounded"/>
         </figure>
         <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div id="modal" class="modal">
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
@@ -201,3 +185,20 @@ window.onclick = function(event) {
 {% unless site.hide_share_buttons %}
 {% include share-buttons.html %}
 {% endunless %}
+
+<script>
+var modal = document.getElementById("modal");
+var btn = document.getElementById("btn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
