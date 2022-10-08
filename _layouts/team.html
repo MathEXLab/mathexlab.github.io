@@ -277,13 +277,3 @@ layout: default
     <h2> Undergraduate students </h2>
     <hr>
   </div>
-
-
-<div class="tags">
-    {% for tag in page.tags %}
-      {% include tag.html tag=tag %}
-    {% endfor %}
-</div>
-{% unless site.hide_share_buttons %}
-{% include share-buttons.html %}
-{% endunless %}
