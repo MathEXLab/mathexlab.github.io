@@ -114,34 +114,19 @@ layout: default
 </div>
 
 <div class="columns is-multiline">
-  <div class="column is-2">
-    <div class="content">
-      <h3> Jiawen WEI </h3>
-      <a href="/team/jiawen-wei">
-        <div class="container_for_overlay">
-          <img src="/images/hiring.jpg" alt="" class="image"/>
-          <div class="overlay">
-            <div class="text">Link</div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <p align="center" style="font-size:100%;">
-      <span class="icon"><i class="fas fa-google"></i></span>
-      <a href="https://scholar.google.com/citations?user=WAeydbgAAAAJ&hl=en">
-        <span class="icon"><i class="fas fa-google"></i></span>
-      </a>
-      <a href="https://www.researchgate.net/profile/Gianmarco-Mengaldo">
-        <span class="icon"><i class="fas fa-researchgate"></i></span>
-      </a>
-      <a href="https://www.linkedin.com/in/gianmarco-m/">
-        <span class="icon"><i class="fas fa-linkedin"></i></span>
-      </a>
-      <a href="https://github.com/mengaldo">
-        <span class="icon"><i class="fas fa-github"></i></span>
-      </a>
-    </p>
-  </div>
+  <head>
+    <script src="jquery.js"></script>
+    <script>
+    $(function(){
+      $("#includedContent").load("/_team/jiawen-wei.html");
+    });
+    </script>
+  </head>
+
+  <body>
+     <div id="includedContent"></div>
+  </body>
+
   <div class="column is-2">
     <div class="content">
       <h3> Chenyu DONG </h3>
