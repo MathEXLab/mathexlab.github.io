@@ -73,5 +73,4 @@ defaults:
 footer_menu: footer_menu
 
 collections:
-  - research
   - team
