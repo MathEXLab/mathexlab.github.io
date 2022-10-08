@@ -74,7 +74,7 @@ defaults:
 footer_menu: footer_menu
 
 collections:
-  team:
+  - team:
     layout      : team
     title       : Research Group
     subtitle    :
