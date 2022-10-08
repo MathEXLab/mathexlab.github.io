@@ -92,7 +92,7 @@ show_sidebar: false
       </p>
       <p align="left" style="font-size:120%;">
         Our research team is led by Principal Investigator
-        <a href=/team/mengaldo/> Dr Gianmarco Mengaldo. </a>
+        [Gianmarco Mengaldo](/team/gianmarco-mengaldo/).
       </p>
 
     </div>
