@@ -70,7 +70,37 @@ defaults:
       show_sidebar: true
 
 
+
 footer_menu: footer_menu
 
 collections:
-  - team
+  research:
+    layout      : research
+    title       : Current research areas
+    subtitle    :
+    sponsors    : research_menu
+    show_sidebar: false
+    hero_height : is-small
+    hero_image  :
+    hero_darken : false
+    show_sidebar: false
+  team:
+    layout      : team
+    title       : Research Group
+    subtitle    :
+    sponsors    : team_menu
+    show_sidebar: false
+    hero_height : is-small
+    hero_image  :
+    hero_darken : false
+    show_sidebar: false
+  publications:
+    layout      : publications
+    title       : Publications
+    subtitle    :
+    sponsors    : publications_menu
+    show_sidebar: false
+    hero_height : is-small
+    hero_image  :
+    hero_darken : false
+    show_sidebar: false
