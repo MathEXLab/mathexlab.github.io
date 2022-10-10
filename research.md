@@ -1,6 +1,6 @@
 ---
 layout      : research
-title       : Current research areas
+title       : Research areas
 subtitle    :
 sponsors    : research_menu
 show_sidebar: false

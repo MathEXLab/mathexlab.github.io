@@ -1,0 +1,31 @@
+id: research-3
+name: Partial differential equations and numerical analysis
+# image: /images/hiring.jpg
+video: /videos/research_car.mov
+summary: "We are using numerical analysis to develop high-fidelity
+  simulation tools for multiscale, multi-physics problems governed
+  by partial differential equations. The main focus is on spectral
+  element methods, with applications in <b>engineering flow simulation</b>,
+  and <b>soft-robotics multi-physics modeling</b>."
+# impact:
+#   - We developed an index, namely '<b>dyna</b>'
+projects:
+  - project1
+  - project2
+collaborations:
+  - Imperial College London (UK)
+  - KAUST (Saudi Arabia)
+  - University of Toronto (Canada)
+  - University of Waterloo (Canada)
+sponsors:
+  - sponsor1:
+    image: /images/logo_moe.png
+    link: https://www.moe.gov.sg
+    awards:
+      - 22-4900-A0001-0
+      - 22-5191-A0001-0
+  - sponsor2:
+    image: /images/logo_nus.jpg
+    link: https://cde.nus.edu.sg
+    awards:
+      - 22-3565-A0001-1

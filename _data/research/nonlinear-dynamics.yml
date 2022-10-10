@@ -1,0 +1,32 @@
+id: research-2
+name: Nonlinear dynamics and complex systems
+# image: /images/hiring.jpg
+# video: /videos/research_car.mov
+summary: "We are developing methods to identify the predictability
+  of complex systems. The methods are rooted in dynamical system
+  and extreme value theory. These are to be used in conjunction
+  with forecasting methods, both traditional and modern, to improve
+  their perfomance. Current application areas include <b>extreme weather</b>
+  and <b>earthquake modeling and prediction</b>."
+# impact:
+#   - We developed an index, namely '<b>dyna</b>'
+projects:
+  - project1
+  - project2
+collaborations:
+  - Argonne National Laboratory (USA)
+  - European Center for Medium-Range Weather Forecasts
+  - University of Cambridge (UK)
+  - University of Geneva (Switzerland)
+sponsors:
+  - sponsor1:
+    image: /images/logo_moe.png
+    link: https://www.moe.gov.sg
+    awards:
+      - 22-4900-A0001-0
+      - 22-5191-A0001-0
+  - sponsor2:
+    image: /images/logo_nus.jpg
+    link: https://cde.nus.edu.sg
+    awards:
+      - 22-3565-A0001-1

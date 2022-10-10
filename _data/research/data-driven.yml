@@ -1,0 +1,38 @@
+id: research-1
+name: Data-driven modeling and forecasting
+# image: /images/hiring.jpg
+video: /videos/research_spod.mov
+summary: "We are developing fast forecasting tools for multivariate
+  time series modeling and forecasting. This involve blending
+  data compression techniques, such as autoencoders and spectral
+  proper orthogonal decomposition, with neural networks. The former
+  are used to identify a reduced manifold to decrease the dimension
+  of the problem. The latter are used to forecast the system in the
+  reduced manifold. Given the 'black-box' nature of neural-network
+  approaches, we are developing interpretability methods, to allow
+  for more 'white-box' forecasting workflows. Current application
+  areas include <b>extreme weather prediction</b>, <b>climate resilience</b>
+  and <b>sustaninability</b>, and <b>healthcare</b>."
+# impact:
+#   - We developed an index, namely '<b>dyna</b>'
+projects:
+  - project1
+  - project2
+collaborations:
+  - Argonne National Laboratory (USA)
+  - Scuola Superiore Sant'Anna (Italy)
+  - Scuola Internazionale Superiore di Studi Avanzati (Italy)
+  - University of Cambridge (UK)
+  - University of Geneva (Switzerland)
+sponsors:
+  - sponsor1:
+    image: /images/logo_moe.png
+    link: https://www.moe.gov.sg
+    awards:
+      - 22-4900-A0001-0
+      - 22-5191-A0001-0
+  - sponsor2:
+    image: /images/logo_nus.jpg
+    link: https://cde.nus.edu.sg
+    awards:
+      - 22-3565-A0001-1

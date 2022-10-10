@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<html>
+
+{% assign sorted-citations = site.data.citations | group_by: "Year" %}
+{% for cit in sorted-citations limit: 1000 %}
+
+  <div class="content">
+  <div id="{{theme.id}}" class="columns is-multiline">
+    <div class="column is-1">
+      <center>
+      <h2>{{cit.name}}</h2>
+      </center>
+    </div>
+    <div class="column is-1">
+    </div>
+    <div class="column is-9">
+    {% assign items = cit.items %}
+    {% for item in items %}
+    {% assign authors = item.Authors | split: '; ' %}
+      <li>
+        {% for author in authors %}
+          {% if {{author}} contains "Mengaldo" %}
+            <b> {{author}} </b>, &nbsp;
+          {% else %}
+            {{author}}, &nbsp;
+          {% endif %}
+        {% endfor %}
+        {{item.Title}}, &nbsp;
+        <i>{{item.Publication}}</i>, &nbsp;
+        {% if item.Volume %} Volume {{item.Volume}}, &nbsp; {% endif %}
+        ({{item.Year}}).
+      </li>
+    {% endfor %}
+    <hr style="width:30%;">
+    <br>
+    </div>
+  </div>
+{% endfor %}
+</html>

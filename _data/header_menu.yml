@@ -3,13 +3,6 @@
 - name: RESEARCH
   link: /research/
 - name: PUBLICATIONS
-  link: /#
-  dropdown:
-    - name: Publications
-    - link: /publications/
-    - name: Selected publications
-    - link: /publications/
-    - name: Covers
-    - link: /publications/
+  link: /publications/
 - name: NEWS
   link: /news/

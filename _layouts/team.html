@@ -53,7 +53,7 @@ layout: default
     {% assign member = member_hash[1] %}
     <div class="column is-4">
       <div class="content">
-        {% assign user_id = {{member.user}} %}
+        {% assign user_id = member.user %}
         {% capture btn_id %}btn-{{ user_id }}{% endcapture %}
         {% capture modal_id %}modal-{{ user_id }}{% endcapture %}
         {% capture close_id %}close-{{ user_id }}{% endcapture %}
@@ -72,11 +72,6 @@ layout: default
             let js_btn_id = "{{btn_id | json}}"
             let js_modal_id = "{{modal_id | json}}"
             let js_close_id = "{{close_id | json}}"
-            document.write(js_btn_id)
-            document.write("   ")
-            document.write(js_modal_id)
-            document.write("   ")
-            document.write(js_close_id)
             let btn = document.getElementById(js_btn_id);
             let modal = document.getElementById(js_modal_id);
             let span = document.getElementById(js_close_id);
@@ -99,7 +94,7 @@ layout: default
         <center> {{member.name}} </center>
       </div>
       <div class="content">
-        <center> <a href="mailto:mpegim@nus.edu.sg"> mpegim@nus.edu.sg </a> </center>
+        <center> <a href="mailto:{{member.email}}"> {{member.email}} </a> </center>
       </div>
       <div class="content">
         <center>
@@ -152,11 +147,10 @@ layout: default
     {% assign member = member_hash[1] %}
     <div class="column is-3">
       <div class="content">
-        {% assign user_id = {{member.user}} %}
+        {% assign user_id = member.user %}
         {% capture btn_id %}btn-{{ user_id }}{% endcapture %}
         {% capture modal_id %}modal-{{ user_id }}{% endcapture %}
         {% capture close_id %}close-{{ user_id }}{% endcapture %}
-
         <center>
           <figure class="image is-128x128">
             <img id="{{btn_id}}" src="{{member.image}}" alt="" class="is-rounded is-clickable"/>
@@ -173,11 +167,6 @@ layout: default
             let js_btn_id = "{{btn_id | json}}"
             let js_modal_id = "{{modal_id | json}}"
             let js_close_id = "{{close_id | json}}"
-            document.write(js_btn_id)
-            document.write("   ")
-            document.write(js_modal_id)
-            document.write("   ")
-            document.write(js_close_id)
             let btn = document.getElementById(js_btn_id);
             let modal = document.getElementById(js_modal_id);
             let span = document.getElementById(js_close_id);
@@ -233,7 +222,6 @@ layout: default
     </div>
     {% endfor %}
   </div>
-
 
   <!-- Master students -->
   <div class="content">
