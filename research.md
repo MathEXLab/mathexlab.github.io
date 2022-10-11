@@ -2,7 +2,6 @@
 layout      : research
 title       : Research areas
 subtitle    :
-sponsors    : research_menu
 show_sidebar: false
 hero_height : is-small
 hero_image  :

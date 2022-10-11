@@ -2,124 +2,142 @@
 layout: default
 ---
 
-<style>
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
-
 
 <html>
+  <style>
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  </style>
+
   {% for theme_hash in site.data.research %}
   {% assign theme = theme_hash[1] %}
   <div id="{{theme.id}}" class="columns is-multiline">
     <div class="column is-7">
+      <!-- THEME / SUMMARY -->
       <div class="content">
         <h2> {{ theme.name }} </h2>
         <hr>
-        <div class="content">
-          <left> {{theme.summary}} </left>
-        </div>
-        {% if theme.impact %}
-        <div class="content">
-          <h4> Impact </h4>
-          <hr style="width:50%;">
-          {% for imp in theme.impact %}
-            {{imp}}
-          {% endfor %}
-        </div>
-        {% endif %}
-        {% if theme.projects %}
-        <div class="content">
-          <h4> Projects </h4>
-          <hr style="width:50%;">
-          {% for project in theme.projects %}
-          <a href="" style="">
-            <button class="button is-outlined is-info is-small">
-             {{project}}
-           </button>
-          </a>
-          {% endfor %}
-        </div>
-        {% endif %}
-        {% if theme.collaborations %}
-        <div class="content">
-          <h4> Collaborations </h4>
-          <hr style="width:50%;">
-          {% for coll in theme.collaborations %}
-          <span  style="font-size: 100%"> &#8227; </span> {{coll}} &nbsp;
-          {% endfor %}
-        </div>
-        {% endif %}
-        {% if theme.sponsors %}
-        <div class="content">
-          <h4> Sponsors </h4>
-          <hr style="width:50%;">
-            <div class="columns is-multiline">
-              {% for sponsor in theme.sponsors %}
-              <div class="column is-3">
-                <figure class="image is-1x1">
-                  <img src="{{sponsor.image}}" alt="" style="width:auto;height:70px;"/>
-                </figure>
-                <center>
-                  <a href="{{sponsor.link}}">
-                    <button class="button is-outlined is-info is-small">
-                      sponsor
-                    </button>
-                  </a>
-                </center>
-                <br>
-                {% if sponsor.awards %}
-                <b> Awards </b>
-                {% for award in sponsor.awards %}
-                <center>
-                  {{award}}
-                </center>
-                {% endfor %}
-                {% endif %}
-              </div>
-              {% endfor %}
-            </div>
-        </div>
-        {% endif %}
-        <hr>
-        <br><br><br>
       </div>
+      <div class="content">
+        <left> {{theme.summary}} </left>
+      </div>
+      <!-- THEME / SUMMARY END -->
+
+      <!-- IMPACT -->
+      {% if theme.impact %}
+      <div class="content">
+        <h4> Impact </h4>
+        <hr style="width:50%;">
+        {% for imp in theme.impact %}
+          {{imp}}
+        {% endfor %}
+      </div>
+      {% endif %}
+      <!-- IMPACT END -->
+
+      <!-- PROJECTS -->
+      {% if theme.projects %}
+      <div class="content">
+        <h4> Projects </h4>
+        <hr style="width:50%;">
+        {% for project in theme.projects %}
+        <a href="" style="">
+          <button class="button is-outlined is-info is-small">
+           {{project}}
+         </button>
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <!-- PROJECTS END -->
+
+      <!-- COLLABORATIONS -->
+      {% if theme.collaborations %}
+      <div class="content">
+        <h4> Collaborations </h4>
+        <hr style="width:50%;">
+        {% for coll in theme.collaborations %}
+        <span  style="font-size: 100%"> &#8227; </span> {{coll}} &nbsp;
+        {% endfor %}
+      </div>
+      {% endif %}
+      <!-- COLLABORATIONS END -->
+
+      <!-- SPONSORS -->
+      {% if theme.sponsors %}
+      <div class="content">
+        <h4> Sponsors </h4>
+      </div>
+      <hr style="width:50%;">
+      <div class="columns is-multiline">
+        {% for sponsor in theme.sponsors %}
+        <div class="column is-3">
+          <center>
+            <figure class="image is-1x1">
+              <img src="{{sponsor.image}}" alt="" style="width:auto;height:70px;"/>
+            </figure>
+            <br>
+            <a href="{{sponsor.link}}">
+              <button class="button is-outlined is-info is-small">
+                sponsor
+              </button>
+            </a>
+          </center>
+          <br>
+          {% if sponsor.awards %}
+          <b> Awards </b>
+          {% for award in sponsor.awards %}
+          <center>
+            {{award}}
+          </center>
+          {% endfor %}
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <hr>
+      <br><br><br>
     </div>
+
     <div class="column is-1">
+      <span></span>
     </div>
+
     <div class="column is-4">
       <center>
         {% if theme.video %}
@@ -129,12 +147,13 @@ layout: default
         </video>
         <span> Atmospheric mode identified using
           <a href="https://mathe-lab.github.io/PySPOD/"> PySPOD</a>
-          for period = 5 days, using ERA5 reanalysis data </span>
+          for period = 5 days, using ERA5 reanalysis data
+        </span>
         {% elsif theme.image %}
         <img src="{{theme.image}}" alt="" class=""/>
         {% endif %}
       </center>
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
 </html>

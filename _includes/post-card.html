@@ -1,39 +1,44 @@
 <div class="card">
-    {% if post.image %}
-    <div class="card-image">
-        <img src="{{ post.image }}" alt="{{ post.title }}"
-             style="object-fit:contain;
-                    max-width: 100%;
-                    height: auto;"
-        />
-    </div>
-    {% else %}
-    <header class="card-header">
-        <a class="card-header-title"
-           href="{{ site.baseurl }}{{ post.url }}">{{post.title}}
-        </a>
-    </header>
-    {% endif %}
-    <div class="card-content">
+  <div class="columns is-multiline is-centered is-vcentered">
+    <div class="column is-6">
+      <div class="card-content">
         <div class="content">
-            {% if post.image %}
+          {% if post.image %}
             <a class="title is-4"
-               href="{{ site.baseurl }}{{ post.url }}">{{post.title}}
+              href="{{ site.baseurl }}{{ post.url }}">{{post.title}}
             </a>
-            {% endif %}
-            {% if post.summary %}
-                {{ post.summary | markdownify }}
-            {% else %}
-                <p>{{post.excerpt}}</p>
-            {% endif %}
+          {% endif %}
+          {% if post.summary %}
+            {{ post.summary | markdownify }}
+          {% else %}
+            <p>{{post.excerpt}}</p>
+          {% endif %}
         </div>
         <div class="has-text-centered">
-            <a href="{{ site.baseurl }}{{ post.url }}"
-               class="button is-primary">Read more
-            </a>
+          <a href="{{ site.baseurl }}{{ post.url }}"
+            class="button is-primary">Read more
+          </a>
         </div>
+      </div>
     </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
-    </footer>
+    <div class="column is-6">
+      {% if post.image %}
+        <div class="card-image">
+          <figure class="image is-2x1">
+            <img src="{{ post.image }}" alt="{{ post.title }}"
+                 style="object-fit:contain;max-width:100%;height:auto;"/>
+          </figure>
+        </div>
+      {% else %}
+        <header class="card-header">
+          <a class="card-header-title"
+            href="{{ site.baseurl }}{{ post.url }}">{{post.title}}
+          </a>
+        </header>
+      {% endif %}
+    </div>
+  </div>
+  <footer class="card-footer">
+    <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
+  </footer>
 </div>

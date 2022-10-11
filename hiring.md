@@ -1,6 +1,6 @@
 ---
-layout      : team
-title       : Research Group
+layout      : hiring
+title       : Hiring
 subtitle    :
 show_sidebar: false
 hero_height : is-small

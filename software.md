@@ -1,6 +1,6 @@
 ---
-layout      : team
-title       : Research Group
+layout      : software
+title       : Software
 subtitle    :
 show_sidebar: false
 hero_height : is-small

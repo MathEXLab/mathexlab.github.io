@@ -51,6 +51,8 @@ sass:
 google_analytics: UA-code-here
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  parse_block_html: true
 
 defaults:
   -

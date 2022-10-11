@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+
+<html>
+  We develop and maintain a number of software libraries:
+
+  {% for software in site.data.software.software_list %}
+  {% for s in software[1] %}
+  {{ s | inspect }}
+  <div class="columns is-multiline is-centered">
+
+    <div class="column is-8 is-centered">
+      {{ software.webpage }}
+    </div>
+
+  </div>
+  {% endfor %}
+  {% endfor %}
+</html>

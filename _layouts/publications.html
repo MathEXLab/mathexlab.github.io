@@ -2,41 +2,104 @@
 layout: default
 ---
 
+
+
 <html>
-
-{% assign sorted-citations = site.data.citations | group_by: "Year" %}
-{% for cit in sorted-citations limit: 1000 %}
-
+  <!-- COVERS -->
   <div class="content">
-  <div id="{{theme.id}}" class="columns is-multiline">
-    <div class="column is-1">
-      <center>
-      <h2>{{cit.name}}</h2>
-      </center>
-    </div>
-    <div class="column is-1">
-    </div>
-    <div class="column is-9">
-    {% assign items = cit.items %}
-    {% for item in items %}
-    {% assign authors = item.Authors | split: '; ' %}
-      <li>
-        {% for author in authors %}
-          {% if {{author}} contains "Mengaldo" %}
-            <b> {{author}} </b>, &nbsp;
-          {% else %}
-            {{author}}, &nbsp;
-          {% endif %}
-        {% endfor %}
-        {{item.Title}}, &nbsp;
-        <i>{{item.Publication}}</i>, &nbsp;
-        {% if item.Volume %} Volume {{item.Volume}}, &nbsp; {% endif %}
-        ({{item.Year}}).
-      </li>
-    {% endfor %}
-    <hr style="width:30%;">
-    <br>
+    <h2 >Covers</h2>
+    <hr>
+    <div id="publication-covers" class="columns is-multiline">
+      <div class="column is-1">
+      </div>
+      <div class="column is-1">
+      </div>
+      {% for cov in site.data.publications.cover_list.covers %}
+      <div class="column is-3">
+        <img src="{{ cov.image }}" />
+        <a href="{{ cov.link }}">
+          <button class="button is-outlined is-info is-small"> LINK </button>
+        </a>
+      </div>
+      {% endfor %}
     </div>
   </div>
-{% endfor %}
+  <hr style="width:30%;">
+  <br>
+  <br>
+  <!-- END COVERS -->
+
+  <!-- FULL LIST -->
+  {% assign sorted_journals = site.data.publications.publication_list | group_by: "Year" %}
+  <div class="content">
+    <h2>Full list</h2>
+    <hr>
+    {% for cit in sorted_journals limit: 1000 %}
+    <div class="content">
+      <div id="{{theme.id}}" class="columns is-multiline">
+
+        <div class="column is-2">
+          <h4 align="center">{{cit.name}}</h4>
+        </div>
+
+
+          <div class="column is-9">
+            {% assign items = cit.items %}
+            {% for item in items %}
+            <li>
+              {% assign authors = item.Authors | split: '; ' %}
+              {% for author in authors %}
+                {% if author contains "Mengaldo" %}
+                  <b> {{author}} </b>, &nbsp;
+                {% else %}
+                  {{author}}, &nbsp;
+                {% endif %}
+              {% endfor %}
+              {{item.Title}}, &nbsp;
+              <i>{{item.Publication}}</i>.
+              <a href="{{ item.DOI }}">
+                <button class="button is-outlined is-info is-small"> LINK </button>
+              </a>
+            </li>
+            <br>
+            {% endfor %}
+          </div>
+        <hr style="width:30%;">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <br>
+  <br>
+  <!-- FULL LIST END -->
+
+  <!-- PHD THESIS -->
+  {% assign other_citations = site.data.publications.thesis_list | where: "Type", "PhD-thesis" %}
+  {% assign sorted_other = other_citations | group_by: "Year" %}
+  <div class="content">
+    <h2>PhD Thesis</h2>
+    <hr>
+    {% for cit in sorted_other limit: 1000 %}
+    <div class="content">
+      <div id="{{theme.id}}" class="columns is-multiline">
+        <div class="column is-2">
+          <h4 align="center">{{cit.name}}</h4>
+        </div>
+        <div class="column is-10">
+          {% assign items = cit.items %}
+          {% for item in items %}
+          <li>
+            <b>G. Mengaldo</b>, &nbsp;
+            {{item.Title}}.
+          </li>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <hr style="width:30%;">
+  <br>
+  <br>
+  <!-- PHD THESIS END -->
 </html>
