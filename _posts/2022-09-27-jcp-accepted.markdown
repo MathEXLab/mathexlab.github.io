@@ -1,7 +1,7 @@
 ---
 layout: news
-title: Hiring Research Assistant
-subtitle: Extreme weather forecasting
+title: New Publication in Nature Reviews Physics
+subtitle: Spectral/hp element methods linear mechanism of (apparent) energy transfer in Fourier space
 icon: users
 date: 2022-09-27
 image: /images/post_paper_jcp.jpg
@@ -46,7 +46,7 @@ summary: |-
     to rely on numerical approximations.
     These approximations may suffer from numerical errors,
     that might produce an unphysical solution. In this paper,
-    we build on previous work on the topic, and furhter characterize 
+    we build on previous work on the topic, and furhter characterize
     some of these errors for spectral element numerical methods.  
   </div>
 

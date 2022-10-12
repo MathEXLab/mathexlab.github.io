@@ -16,7 +16,9 @@ layout: default
       </div>
       {% for cov in site.data.publications.cover_list.covers %}
       <div class="column is-3">
-        <img src="{{ cov.image }}" />
+        <a href="{{ cov.link }}">
+          <img src="{{ cov.image }}"/>
+        </a>
         <a href="{{ cov.link }}">
           <button class="button is-outlined is-info is-small"> LINK </button>
         </a>
