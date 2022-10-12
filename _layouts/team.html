@@ -52,7 +52,7 @@ layout: default
   <div class="columns is-multiline">
     {% for member_hash in site.data.team.faculty %}
     {% assign member = member_hash[1] %}
-    <div class="column is-4">
+    <div id="{{member.user}}-page-location" class="column is-4">
       <div class="content">
         {% assign user_id = member.user %}
         {% capture btn_id %}btn-{{ user_id }}{% endcapture %}
