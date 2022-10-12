@@ -61,7 +61,7 @@ layout: default
         <center>
           <figure class="image is-128x128">
             <img id="{{btn_id}}" src="{{member.image}}" alt=""
-                 class="is-rounded is-clickable"/>
+                 class="is-clickable" style="border-radius:10%"/>
           </figure>
           <div id="{{modal_id}}" class="modal">
             <div id="{{close_id}}" class="modal-content">
@@ -147,7 +147,8 @@ layout: default
         {% capture close_id %}close-{{ user_id }}{% endcapture %}
         <center>
           <figure class="image is-128x128">
-            <img id="{{btn_id}}" src="{{member.image}}" alt="" class="is-rounded is-clickable"/>
+            <img id="{{btn_id}}" src="{{member.image}}" alt="" 
+              class="is-clickable" style="border-radius:10%"/>
           </figure>
           <!-- The Modal -->
           <div id="{{modal_id}}" class="modal">
@@ -239,7 +240,7 @@ layout: default
   </div>
   <br>
 
-  <div class="columns is-multiline">
+  <!-- <div class="columns is-multiline">
     {% for member_hash in site.data.team %}
     {% assign member = member_hash[1] %}
     {% for master in member.masters%}
@@ -251,7 +252,7 @@ layout: default
     </div>
     {% endfor %}
     {% endfor %}
-  </div>
+  </div> -->
   
   <!-- Undergraduate students -->
   <div class="content">
@@ -264,8 +265,9 @@ layout: default
       {% endfor %}
     </li>
   </div>
-  
-  <div class="columns is-multiline">
+  <br>
+
+  <!-- <div class="columns is-multiline">
     {% for member_hash in site.data.team %}
     {% assign member = member_hash[1] %}
     {% for ungrad in member.ungrad%}
@@ -277,6 +279,6 @@ layout: default
     </div>
     {% endfor %}
     {% endfor %}
-  </div>
+  </div> -->
   
 </html>

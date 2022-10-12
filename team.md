@@ -1,6 +1,6 @@
 ---
 layout      : team
-title       : Research Group
+title       : Team
 subtitle    :
 show_sidebar: false
 hero_height : is-small

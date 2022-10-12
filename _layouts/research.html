@@ -47,14 +47,19 @@ layout: default
   <div id="{{theme.id}}" class="columns is-multiline">
     <div class="column is-7">
       <!-- THEME / SUMMARY -->
+      {% if theme.name %}
       <div class="content">
         <h2> {{ theme.name }} </h2>
         <hr>
       </div>
+      {% endif %}
+
+      {% if theme.summary %}
       <div class="content">
         <left> {{theme.summary}} </left>
       </div>
       <!-- THEME / SUMMARY END -->
+      {% endif %}
 
       <!-- IMPACT -->
       {% if theme.impact %}
@@ -74,9 +79,9 @@ layout: default
         <h4> Projects </h4>
         <hr style="width:50%;">
         {% for project in theme.projects %}
-        <a href="" style="">
-          <button class="button is-outlined is-info is-small">
-           {{project}}
+        <a href="{{ project.link }}">
+          <button class="button is-outlined is-link is-small">
+           {{ project.name }}
          </button>
         </a>
         {% endfor %}
@@ -100,8 +105,8 @@ layout: default
       {% if theme.sponsors %}
       <div class="content">
         <h4> Sponsors </h4>
+        <hr style="width:50%;">
       </div>
-      <hr style="width:50%;">
       <div class="columns is-multiline">
         {% for sponsor in theme.sponsors %}
         <div class="column is-3">
@@ -111,7 +116,7 @@ layout: default
             </figure>
             <br>
             <a href="{{sponsor.link}}">
-              <button class="button is-outlined is-info is-small">
+              <button class="button is-outlined is-link is-small">
                 sponsor
               </button>
             </a>
@@ -129,8 +134,6 @@ layout: default
         {% endfor %}
       </div>
       {% endif %}
-
-      <hr>
       <br><br><br>
     </div>
 
@@ -149,7 +152,7 @@ layout: default
           {{ theme.caption }}
         </span>
         {% elsif theme.image %}
-        <img src="{{theme.image}}" alt="" class=""/>
+        <img src="{{ theme.image }}" alt="" class=""/>
         {% endif %}
       </center>
     </div>

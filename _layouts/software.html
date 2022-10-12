@@ -20,12 +20,13 @@ layout: default
 <div class="content">
   {% for software in site.data.software.software_list %}
   {% assign soft = site.data.software.software_list[1] %}
-  <div>
-    <h2>{{ software[0]] }}</h2>
-    <hr style="width:50%;">
-  </div>
-  <br>
+
   <div class="columns is-multiline is-centered">
+    <div class="column is-2 is-vcentered">
+      <h2>{{ software[0]] }}</h2>
+      <hr style="width:50%;">
+    </div>
+    <br>
     <div class="column is-2 is-centered">
       {% for item in software[1] %}
       {% if item.image %}

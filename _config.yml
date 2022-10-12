@@ -1,12 +1,11 @@
 # Site Settings
-lang: en
-title: Mengaldo Lab
+lang   : en
+title  : Mengaldo Lab
 tagline: Mengaldo Lab
-# email: your-email@domain.com
 description: >
   This is our research website.
+favicon  : /images/logo_website.png
 permalink: pretty
-favicon: /images/logo_website.png
 #theme_color: '#eeeeee'
 
 
@@ -44,29 +43,3 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   parse_block_html: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      show_sidebar: true
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      # author: "C.S. Rhymes"
-      layout: post
-      image: https://via.placeholder.com/1200x800
-      show_sidebar: true
-
-
-
-footer_menu: footer_menu
-
-collections:
-  - team
-  - research
-  - publications

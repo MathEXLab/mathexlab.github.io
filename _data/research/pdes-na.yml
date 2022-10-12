@@ -11,8 +11,12 @@ summary: "We are using numerical analysis to develop high-fidelity
 # impact:
 #   - We developed an index, namely '<b>dyna</b>'
 projects:
-  - project1
-  - project2
+  - project1:
+    name: project1
+    link: /research/projects/extreme-weather
+  - project2:
+    name: project2
+    link: /research/projects/interpretable-time-series
 collaborations:
   - Imperial College London (UK)
   - KAUST (Saudi Arabia)
