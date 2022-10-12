@@ -1,6 +1,6 @@
 ---
 layout: news
-title: New Publication in Nature Reviews Physics
+title: New Publication
 subtitle: A concise guide to modelling the physics of embodied intelligence in soft robotics
 icon: users
 date: 2022-08-03
@@ -11,7 +11,7 @@ hero_darken: true
 show_sidebar: false
 tags: research soft-robotics
 summary: |-
-  Paper accepted in Nature Reviews Physics
+  Paper accepted in <b>Nature Reviews Physics</b>
   on embodied intelligence in the context
   of soft robotics.
 ---
@@ -22,7 +22,7 @@ summary: |-
   <div class="content">
   Our paper titled <i>A concise guide to modelling the physics
   of embodied intelligence in soft robotics</i> was just accepted
-  for publication in Nature Reviews Physics.
+  for publication in <b>Nature Reviews Physics</b>.
   </div>
 
   <div>

@@ -1,6 +1,6 @@
 ---
 layout: news
-title: New Publication in Nature Reviews Physics
+title: New Publication
 subtitle: Spectral/hp element methods linear mechanism of (apparent) energy transfer in Fourier space
 icon: users
 date: 2022-09-27
@@ -11,7 +11,7 @@ hero_darken: true
 show_sidebar: false
 tags: research computational mathematics
 summary: |-
-  Paper accepted in Journal of Computational Physics
+  Paper accepted in <b>Journal of Computational Physics</b>
   on Spectral/hp element methods' linear mechanism
   of (apparent) energy transfer in Fourier space
   for implicit Large-Eddy Simulation (LES).

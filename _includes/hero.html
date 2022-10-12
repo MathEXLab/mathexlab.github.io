@@ -4,16 +4,16 @@
      - modify _data/header_menu.yml for content
 -->
 
-<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary"
+<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-link"
   {% if page.hero_image %}
     style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;"
   {% endif %}>
   <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
     <div class="container">
-      <h1 align="center" class="title is-3">{{ page.title }}</h1>
-        <p align="center" class="subtitle is-4">{{ page.subtitle }}</p>
+      <h1 align="{{ page.hero_align }}" class="title is-3">{{ page.title }}</h1>
+        <p align="{{ page.hero_align }}" class="subtitle is-4">{{ page.subtitle }}</p>
         {% if page.hero_link %}
-          <a href="{{ page.hero_link | relative_url }}"
+          <a align="{{ page.hero_align }}" href="{{ page.hero_link | relative_url }}"
              class="button is-info is-large">{{ page.hero_link_text }}</a>
         {% endif %}
     </div>

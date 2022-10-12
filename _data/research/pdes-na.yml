@@ -2,7 +2,7 @@ id: research-3
 name: Partial differential equations and numerical analysis
 # image: /images/hiring.jpg
 video: /videos/research_car.mov
-caption: "Flow past a high-performance road car obtained with <a href=''> Nektar++.</a>" 
+caption: "Flow past a high-performance road car obtained with <a href='https://www.nektar.info'> Nektar++.</a>"
 summary: "We are using numerical analysis to develop high-fidelity
   simulation tools for multiscale, multi-physics problems governed
   by partial differential equations. The main focus is on spectral

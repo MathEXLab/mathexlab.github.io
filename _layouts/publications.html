@@ -7,7 +7,21 @@ layout: default
 <html>
   <!-- COVERS -->
   <div class="content">
-    <h2 >Covers</h2>
+    <div class="columns is-multiline">
+      <div class="column is-8">
+      <h2>Covers</h2>
+      </div>
+      <div class="column is-4" align="right">
+        <a class="button is-large is-google"
+          href="{{ site.data.footer_menu.scholar }}">
+            <span class="icon"><img src="/images/icon_scholar.png"></img></span>
+        </a>
+        <a class="button is-large is-researchgate"
+          href="{{ site.data.footer_menu.researchgate }}">
+          <span class="icon"><img src="/images/icon_researchgate.png"></img></span>
+        </a>
+      </div>
+    </div>
     <hr>
     <div id="publication-covers" class="columns is-multiline">
       <div class="column is-1">
@@ -20,7 +34,7 @@ layout: default
           <img src="{{ cov.image }}"/>
         </a>
         <a href="{{ cov.link }}">
-          <button class="button is-outlined is-info is-small"> LINK </button>
+          <button class="button is-outlined is-link is-small"> LINK </button>
         </a>
       </div>
       {% endfor %}
@@ -34,38 +48,49 @@ layout: default
   <!-- FULL LIST -->
   {% assign sorted_journals = site.data.publications.publication_list | group_by: "Year" %}
   <div class="content">
-    <h2>Full list</h2>
+    <div class="columns is-multiline">
+      <div class="column is-8">
+      <h2>Full list</h2>
+      </div>
+      <div class="column is-4" align="right">
+        <a class="button is-large is-google"
+          href="{{ site.data.footer_menu.scholar }}">
+            <span class="icon"><img src="/images/icon_scholar.png"></img></span>
+        </a>
+        <a class="button is-large is-researchgate"
+          href="{{ site.data.footer_menu.researchgate }}">
+          <span class="icon"><img src="/images/icon_researchgate.png"></img></span>
+        </a>
+      </div>
+    </div>
     <hr>
     {% for cit in sorted_journals limit: 1000 %}
     <div class="content">
       <div id="{{theme.id}}" class="columns is-multiline">
-
         <div class="column is-2">
           <h4 align="center">{{cit.name}}</h4>
         </div>
-
-
-          <div class="column is-9">
-            {% assign items = cit.items %}
-            {% for item in items %}
-            <li>
-              {% assign authors = item.Authors | split: '; ' %}
-              {% for author in authors %}
-                {% if author contains "Mengaldo" %}
-                  <b> {{author}} </b>, &nbsp;
-                {% else %}
-                  {{author}}, &nbsp;
-                {% endif %}
-              {% endfor %}
-              {{item.Title}}, &nbsp;
-              <i>{{item.Publication}}</i>.
-              <a href="{{ item.DOI }}">
-                <button class="button is-outlined is-info is-small"> LINK </button>
-              </a>
-            </li>
-            <br>
+        <div class="column is-9">
+          {% assign items = cit.items %}
+          {% for item in items %}
+          <li>
+            {% assign authors = item.Authors | split: '; ' %}
+            {% for author in authors %}
+              {% if author contains "Mengaldo" %}
+                <b> {{author}} </b>, &nbsp;
+              {% else %}
+                {{author}}, &nbsp;
+              {% endif %}
             {% endfor %}
-          </div>
+            {{item.Title}}, &nbsp;
+            <i>{{item.Publication}}</i>.
+            <a href="{{ item.DOI }}">
+              <button class="button is-outlined is-link is-small"> LINK </button>
+            </a>
+          </li>
+          <br>
+          {% endfor %}
+        </div>
         <hr style="width:30%;">
       </div>
     </div>
@@ -79,7 +104,21 @@ layout: default
   {% assign other_citations = site.data.publications.thesis_list | where: "Type", "PhD-thesis" %}
   {% assign sorted_other = other_citations | group_by: "Year" %}
   <div class="content">
-    <h2>PhD Thesis</h2>
+    <div class="columns is-multiline">
+      <div class="column is-8">
+      <h2>PhD Thesis</h2>
+      </div>
+      <div class="column is-4" align="right">
+        <a class="button is-large is-google"
+          href="{{ site.data.footer_menu.scholar }}">
+            <span class="icon"><img src="/images/icon_scholar.png"></img></span>
+        </a>
+        <a class="button is-large is-researchgate"
+          href="{{ site.data.footer_menu.researchgate }}">
+          <span class="icon"><img src="/images/icon_researchgate.png"></img></span>
+        </a>
+      </div>
+    </div>
     <hr>
     {% for cit in sorted_other limit: 1000 %}
     <div class="content">
@@ -93,6 +132,9 @@ layout: default
           <li>
             <b>G. Mengaldo</b>, &nbsp;
             {{item.Title}}.
+            <a href="{{ item.DOI }}">
+              <button class="button is-outlined is-info is-small"> LINK </button>
+            </a>
           </li>
           {% endfor %}
         </div>

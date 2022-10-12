@@ -1,9 +1,9 @@
 <div class="card">
-  <div class="columns is-multiline is-centered is-vcentered">
+  <div class="columns is-multiline is-centered">
     <div class="column is-6">
       <div class="card-content">
         <div class="content">
-          {% if post.image %}
+          {% if data.hiring.image %}
             <a class="title is-4"
               href="{{ site.baseurl }}{{ post.url }}">{{post.title}}
             </a>
@@ -16,7 +16,7 @@
         </div>
         <div class="has-text-centered">
           <a href="{{ site.baseurl }}{{ post.url }}"
-            class="button is-link is-light">Read more
+            class="button is-link">Read more
           </a>
         </div>
       </div>
@@ -24,9 +24,9 @@
     <div class="column is-6">
       {% if post.image %}
         <div class="card-image">
-          <figure class="image is-2x1">
+          <figure class="image is-1x1">
             <img src="{{ post.image }}" alt="{{ post.title }}"
-                 style="object-fit:contain;max-width:100%;height:auto;"/>
+                 style="object-fit:contain;max-width: 100%;height: auto;"/>
           </figure>
         </div>
       {% else %}

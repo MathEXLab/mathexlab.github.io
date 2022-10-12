@@ -1,5 +1,6 @@
 <footer class="footer">
     <div class="container">
+
         {% if site.footer_menu %}
         <div class="columns is-multiline">
             {% for item in site.data[site.footer_menu] %}
@@ -11,5 +12,49 @@
             {% endfor %}
         </div>
         {% endif %}
+
+        <center>
+        <div class="content" style="font-size:120%">
+          <b>Follow</b>
+        </div>
+        </center>
+        <br>
+
+        <div class="buttons is-centered">
+          <a class="button is-medium is-google"
+             href="{{ site.data.footer_menu.scholar }}">
+              <span class="icon"><img src="/images/icon_scholar.png"></img></span>
+          </a>
+          <a class="button is-medium is-researchgate"
+             href="{{ site.data.footer_menu.researchgate }}">
+             <span class="icon"><img src="/images/icon_researchgate.png"></img></span>
+          </a>
+          <a class="button is-medium is-github"
+             href="{{ site.data.footer_menu.github }}">
+              <span class="icon"><i class="fab fa-github fa-lg"></i></span>
+          </a>
+          <a class="button is-medium is-linkedin"
+             href="{{ site.data.footer_menu.linkedin }}">
+              <span class="icon"><i class="fab fa-linkedin fa-lg"></i></span>
+          </a>
+          <a class="button is-medium is-twitter"
+             href="{{ site.data.footer_menu.twitter }}">
+              <span class="icon"><i class="fab fa-twitter fa-lg"></i></span>
+          </a>
+          <a class="button is-medium is-rss"
+             href="{{ site.baseurl }}/feed.xml" title="RSS Feed">
+             <span class="icon"><i class="fas fa-rss fa-lg"></i></span>
+          </a>
+        </div>
+        <br>
+
+        <div class="content is-small has-text-centered">
+            <p>Site based on
+              <a href="https://github.com/chrisrhymes/bulma-clean-theme">
+                Bulma Clean Theme
+              </a>
+            </p>
+            <p>&copy; 2021<script>new Date().getFullYear()>2021&&document.write("-"+new Date().getFullYear());</script> Mengaldo Lab</p>
+        </div>
     </div>
 </footer>

@@ -5,18 +5,83 @@ layout: default
 
 
 <html>
-  We develop and maintain a number of software libraries:
 
-  {% for software in site.data.software.software_list %}
-  {% for s in software[1] %}
-  {{ s | inspect }}
-  <div class="columns is-multiline is-centered">
-
-    <div class="column is-8 is-centered">
-      {{ software.webpage }}
-    </div>
-
+<!-- {{ s | inspect }} -->
+<div class="content">
+  <div style="font-size:150%">
+    We develop, maintain and contribute to a number of software libraries.
   </div>
+  <hr>
+  <br>
+  <br>
+  <br>
+</div>
+
+<div class="content">
+  {% for software in site.data.software.software_list %}
+  {% assign soft = site.data.software.software_list[1] %}
+  <div>
+    <h2>{{ software[0]] }}</h2>
+    <hr style="width:50%;">
+  </div>
+  <br>
+  <div class="columns is-multiline is-centered">
+    <div class="column is-2 is-centered">
+      {% for item in software[1] %}
+      {% if item.image %}
+      <img src="{{ item.image }}"> </img>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="column is-8 is-centered">
+      {% for item in software[1] %}
+      {% if item.summary %}
+      <div class="notification is-primary is-light">
+        {{ item.summary}}
+      </div>
+      {% endif %}
+      {% if item.webpage %}
+      <a href="{{ item.webpage }}">
+        <button class="button is-outlined is-link is-small">
+          <b>WEBPAGE</b>
+        </button>
+      </a>
+      {% endif %}
+      {% if item.download %}
+      <a href="{{ item.download }}">
+        <button class="button is-outlined is-link is-small">
+          <b>DOWNLOAD</b>
+        </button>
+      </a>
+      {% endif %}
+      {% if item.docs %}
+      <a href="{{ item.docs }}">
+        <button class="button is-outlined is-link is-small">
+          <b>DOCS</b>
+        </button>
+      </a>
+      {% endif %}
+      {% if item.tutorials %}
+      <a href="{{ item.tutorials }}">
+        <button class="button is-outlined is-link is-small">
+          <b>TUTORIALS</b>
+        </button>
+      </a>
+      {% endif %}
+      {% if item.team %}
+      <a href="{{ item.team }}">
+        <button class="button is-outlined is-link is-small">
+          <b>TEAM</b>
+        </button>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
   {% endfor %}
-  {% endfor %}
+</div>
+
 </html>

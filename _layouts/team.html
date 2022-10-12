@@ -91,43 +91,35 @@ layout: default
           </script>
         </center>
       </div>
-      <div class="content">
-        <center> {{member.name}} </center>
+      <div class="content" style="font-size:120%">
+        <center> <b>{{member.name}}</b> </center>
       </div>
       <div class="content">
-        <center> <a href="mailto:{{member.email}}"> {{member.email}} </a> </center>
+        <center> <a href="mailto:{{member.email}}"> <u>{{member.email}}</u> </a> </center>
       </div>
       <div class="content">
         <center>
           {% if member.scholar %}
-          <a href="{{member.scholar}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-google" style="font-size: 2.0em;"></i>
+          <a class="button is-medium is-google" href="{{ member.scholar }}">
+            <span class="icon"><img src="/images/icon_scholar.png"></img></span>
           </a>
           <span style="display:inline-block; width: 5px;"></span>
           {% endif %}
           {% if member.rg %}
-          <a href="{{member.rg}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-researchgate" style="font-size: 2.0em;"></i>
+          <a class="button is-medium is-researchgate" href="{{ member.rg }}">
+            <span class="icon"><img src="/images/icon_researchgate.png"></img></span>
           </a>
           <span style="display:inline-block; width: 5px;"></span>
           {% endif %}
           {% if member.linkedin %}
-          <a href="{{member.linkedin}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-linkedin" style="font-size: 2.0em;"></i>
+          <a class="button is-medium is-linkedin" href="{{ member.linkedin }}">
+            <span class="icon"><i class="fab fa-linkedin fa-lg"></i></span>
           </a>
           <span style="display:inline-block; width: 5px;"></span>
           {% endif %}
           {% if member.github %}
-          <a href="{{member.github}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-github" style="font-size: 2.0em;"></i>
+          <a class="button is-medium is-github" href="{{ member.github }}">
+            <span class="icon"><i class="fab fa-github fa-lg"></i></span>
           </a>
           {% endif %}
         </center>
@@ -136,6 +128,7 @@ layout: default
     </div>
     {% endfor %}
   </div>
+  <br>
 
   <!-- PhD students -->
   <div class="content">
@@ -186,53 +179,75 @@ layout: default
           </script>
         </center>
       </div>
-      <div class="content">
-        <center> {{member.name}} </center>
+      <div class="content" style="font-size:120%">
+        <center> <b>{{member.name}}</b> </center>
       </div>
       <div class="content">
-        <center> <a href="mailto:{{member.email}}"> {{member.email}} </a> </center>
+        <center> <a href="mailto:{{member.email}}"> <u>{{member.email}}</u> </a> </center>
       </div>
       <div class="content">
         <center>
-          <a href="{{member.scholar}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-google" style="font-size: 2.1em;"></i>
+          {% if member.scholar %}
+          <a class="button is-medium is-google" href="{{ member.scholar }}">
+            <span class="icon"><img src="/images/icon_scholar.png"></img></span>
           </a>
           <span style="display:inline-block; width: 5px;"></span>
-          <a href="{{member.rg}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-researchgate" style="font-size: 2.1em;"></i>
+          {% endif %}
+          {% if member.rg %}
+          <a class="button is-medium is-researchgate" href="{{ member.rg }}">
+            <span class="icon"><img src="/images/icon_researchgate.png"></img></span>
           </a>
           <span style="display:inline-block; width: 5px;"></span>
-          <a href="{{member.linkedin}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-linkedin" style="font-size: 2.1em;"></i>
+          {% endif %}
+          {% if member.linkedin %}
+          <a class="button is-medium is-linkedin" href="{{ member.linkedin }}">
+            <span class="icon"><i class="fab fa-linkedin fa-lg"></i></span>
           </a>
           <span style="display:inline-block; width: 5px;"></span>
-          <a href="{{member.github}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-github" style="font-size: 2.1em;"></i>
+          {% endif %}
+          {% if member.github %}
+          <a class="button is-medium is-github" href="{{ member.github }}">
+            <span class="icon"><i class="fab fa-github fa-lg"></i></span>
           </a>
+          {% endif %}
         </center>
-        <hr>
       </div>
+      <center>
+        {% for topic in member.topics %}
+        <div class="button is-small">
+          <span> {{topic}} </span>
+        </div>
+        {% endfor %}
+      </center>
+      <hr>
+
     </div>
     {% endfor %}
   </div>
+  <br>
 
   <!-- Master students -->
   <div class="content">
     <h2> Master students </h2>
     <hr>
+    {% assign masters = site.data.team.masters_list | sort: "Year" %}
+    {% for m in masters reversed %}
+    <li style="text-indent: 40px;">
+      <b>{{ m.Name }}</b>, {{ m.Role }}, <u>{{ m.Institution }}</u> ({{ m.Country }}), <b>{{ m.Year }}</b>
+    {% endfor %}
+    </li>
   </div>
+  <br>
 
   <!-- Undergraduate students -->
   <div class="content">
     <h2> Undergraduate students </h2>
     <hr>
+    {% assign undergrads = site.data.team.undergrads_list | sort: "Year" %}
+    {% for m in undergrads reversed %}
+    <li style="text-indent: 40px;">
+      <b>{{ m.Name }}</b>, {{ m.Role }}, <u>{{ m.Institution }}</u> ({{ m.Country }}), <b>{{ m.Year }}</b>
+      {% endfor %}
+    </li>
   </div>
 </html>

@@ -3,7 +3,7 @@ layout: news
 title: Hiring for 3 positions
 subtitle: 1 Postdoctoral Scholar, 2 Research Assistants
 icon: users
-date: 2022-10-04
+date: 2022-10-01
 image: /images/team_hiring_hr.jpg
 hero_image: false
 hero_height: is-small

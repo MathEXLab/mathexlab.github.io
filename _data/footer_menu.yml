@@ -1,8 +1,5 @@
-- name: Home
-  link: /
-- name: Research
-  link: /research/
-- name: Publications
-  link: /docs/
-- name: GitHub
-  link: https://github.com/mathe-lab
+scholar : https://scholar.google.com/citations?user=WAeydbgAAAAJ&hl=en
+researchgate: https://www.researchgate.net/profile/Gianmarco-Mengaldo
+github  : https://github.com/mathe-lab
+linkedin: https://www.linkedin.com/in/gianmarco-m/
+twitter : https://twitter.com/GMengaldo

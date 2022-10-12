@@ -3,10 +3,13 @@ user: jiawenw
 name: Jiawen WEI
 image: /images/team_hiring.jpg
 email: jiawenw@u.nus.edu
-scholar:
-rg:
+scholar: https://scholar.google.com.sg/citations?user=Cc-4rGwAAAAJ&hl=en&oi=sra
+rg: https://www.researchgate.net/profile/Jiawen-Wei-4
 linkedin:
 github: https://github.com/Gwen-JW
+topics:
+  - Interpretability
+  - Time series
 bio: "Jiawen Wei is a PhD student in Mengaldo's Research Group
 focussing on interpretability for neural networks applied to
 time series."

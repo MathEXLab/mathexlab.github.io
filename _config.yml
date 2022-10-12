@@ -6,19 +6,13 @@ tagline: Mengaldo Lab
 description: >
   This is our research website.
 permalink: pretty
-favicon: /images/logo_website.jpg
+favicon: /images/logo_website.png
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 # fixed_navbar: top
 # direction: one of <ltr, rtl, auto>, default: ltr
 
-## pages shown in navbar
-nav_pages:
-  - name: team
-  - name: research
-  - name: publications
-  - name: software
-  - name: news
+
 
 # pagination settings
 paginate: 5

@@ -1,26 +1,28 @@
-- software1:
-  - name: PySPOD
+PySPOD:
+  - summary: "PySPOD implements two parallel versions of the
+      spectral proper orthogonal decomposition (SPOD). These
+      are used to identify space-time coherent patterns in
+      ergodic data. This method has been extensively used
+      in a variety of fields, including fluid mechanics,
+      climate and weather, among others."
   - webpage: https://mathe-lab.github.io/PySPOD/
   - download: https://github.com/mathe-lab/PySPOD
   - tutorials: https://mathe-lab.github.io/PySPOD/tutorials
   - docs: https://readthedocs.org/projects/pyspod/
   - team: https://mathe-lab.github.io/PySPOD/team
-  - summary: "PySPOD implements two parallel versions of the
-    spectral proper orthogonal decomposition (SPOD). These
-    are used to identify space-time coherent patterns in
-    ergodic data. This method has been extensively used
-    in a variety of fields, including fluid mechanics,
-    climate and weather, among others."
-- software2:
-  - name: Nektar++
+  - image: /images/software_pyspod.jpg
+
+Nektar++:
+  - summary: "Nektar++ is a tensor product based finite element
+      package designed to allow one to construct efficient classical
+      low polynomial order h-type solvers (where h is the size of
+      the finite element) as well as higher p-order piecewise polynomial
+      order solvers. The framework comes with a number of solvers
+      and also allows one to construct a variety of new solvers."
   - webpage: https://www.nektar.info
   - download: https://www.nektar.info/getting-started/installation/
   - tutorials: https://www.nektar.info/getting-started/tutorials/
   - docs: https://www.nektar.info/getting-started/documentation/
   - team: https://www.nektar.info/community/development-team/
-  - summary: "Nektar++ is a tensor product based finite element
-    package designed to allow one to construct efficient classical
-    low polynomial order h-type solvers (where h is the size of
-    the finite element) as well as higher p-order piecewise polynomial
-    order solvers. The framework comes with a number of solvers
-    and also allows one to construct a variety of new solvers."
+  - image: /images/software_nektar.jpg
+

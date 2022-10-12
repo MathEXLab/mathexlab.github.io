@@ -1,14 +1,15 @@
 ---
 layout     : default
-title      : Welcome to LCME
-subtitle   : Laboratory for Computational and Mathematical Engineering
+title      : Welcome to Mengaldo Lab
+subtitle   : We develop predictive computational models
 layout     : homepage
 hero_height: is-medium
 # hero_height: is-fullheight
-hero_image : /images/campus-bg.jpg
+hero_image : /images/hero_nus.jpg
 hero_darken: false
-# hero_link:
-# hero_link_text:
-# hero_caption:
+hero_align: left
+hero_link: /software/
+hero_link_text: Our open-source libraries
+hero_caption:
 show_sidebar: false
 ---
