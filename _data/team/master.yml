@@ -1,0 +1,13 @@
+masters:
+  - master1:
+    name: Boyi HU
+    institution: National University of Singapore
+  - master2:
+    name: Mathieu Peel
+    institution: National University of Singapore
+  - master4:
+    name: Qinhao LI
+    institution: National University of Singapore
+  - master5:
+    name: Qiong WU
+    institution: National University of Singapore

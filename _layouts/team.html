@@ -239,6 +239,20 @@ layout: default
   </div>
   <br>
 
+  <div class="columns is-multiline">
+    {% for member_hash in site.data.team %}
+    {% assign member = member_hash[1] %}
+    {% for master in member.masters%}
+    <div class="column is-3">
+      <div class="contents">
+        <center> {{master.name}} </center>
+        <center> {{master.institution}} </center>
+      </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+  </div>
+  
   <!-- Undergraduate students -->
   <div class="content">
     <h2> Undergraduate students </h2>
@@ -250,4 +264,19 @@ layout: default
       {% endfor %}
     </li>
   </div>
+  
+  <div class="columns is-multiline">
+    {% for member_hash in site.data.team %}
+    {% assign member = member_hash[1] %}
+    {% for ungrad in member.ungrad%}
+    <div class="column is-3">
+      <div class="contents">
+        <center> {{ungrad.name}} </center>
+        <center> {{ungrad.institution}} </center>
+      </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+  </div>
+  
 </html>
