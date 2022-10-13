@@ -2,7 +2,7 @@
 layout: news
 title: New Publication
 subtitle: Spectral/hp element methods linear mechanism of (apparent) energy transfer in Fourier space
-icon: users
+icon: print
 date: 2022-09-27
 image: /images/post_paper_jcp.jpg
 hero_image: false

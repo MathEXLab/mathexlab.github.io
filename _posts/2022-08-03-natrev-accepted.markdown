@@ -2,7 +2,7 @@
 layout: news
 title: New Publication
 subtitle: A concise guide to modelling the physics of embodied intelligence in soft robotics
-icon: users
+icon: print
 date: 2022-08-03
 image: /images/post_paper_natrev.jpg
 hero_image: false

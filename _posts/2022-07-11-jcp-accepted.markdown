@@ -2,7 +2,7 @@
 layout: news
 title: New Publication
 subtitle: Neural-network learning of SPOD latent dynamics
-icon: users
+icon: print
 date: 2022-07-11
 image: /images/post_paper_jcp_spod.jpg
 hero_image: false

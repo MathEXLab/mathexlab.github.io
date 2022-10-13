@@ -1,12 +1,14 @@
 # Site Settings
 lang   : en
-title  : Mengaldo Lab
+title  : 
 tagline: Mengaldo Lab
 description: >
   This is our research website.
+author   : Gianmarco Mengaldo
+linkedin : https://www.linkedin.com/in/gianmarco-m/?originalSubdomain=sg
 favicon  : /images/logo_website.png
 permalink: pretty
-#theme_color: '#eeeeee'
+# theme_color: '#eeeeee'
 
 
 
