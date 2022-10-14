@@ -9,7 +9,7 @@ linkedin : https://www.linkedin.com/in/gianmarco-m/?originalSubdomain=sg
 favicon  : /images/logo_website.png
 permalink: pretty
 # theme_color: '#eeeeee'
-
+theme_color         : "#216778"
 
 
 # pagination settings
