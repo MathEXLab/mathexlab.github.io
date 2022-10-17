@@ -55,7 +55,7 @@ summary: |-
   <br>
   <br>
   For more information, checkout the   
-  <a href="https://gmd.copernicus.org/articles/15/3433/2022/" 
+  <a href="https://ims.nus.edu.sg/events/machine-learning-and-its-applications/" 
      style="">
     <button class="button is-outlined is-link is-small"> <b>WORKSHOP WEBPAGE</b> </button>
   </a>
