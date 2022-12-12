@@ -6,10 +6,11 @@ description: >
   This is our research website.
 author   : Gianmarco Mengaldo
 linkedin : https://www.linkedin.com/in/gianmarco-m/?originalSubdomain=sg
-favicon  : /images/logo_website.png
+favicon  : /images/logo-no-background.png
 permalink: pretty
 # theme_color: '#eeeeee'
-theme_color         : "#216778"
+# theme_color: "#216778"
+theme_color: '#485ec6'
 
 
 # pagination settings
