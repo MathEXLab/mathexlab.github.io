@@ -4,11 +4,42 @@
      - modify _data/header_menu.yml for content
 -->
 
+<style>
+.scroll-down-icon {
+  position: relative;
+  left: 50%;
+  margin-bottom: -18cm;
+  color: rgb(255, 255, 255, 0.8);
+  width: 50px;
+  height: 50px;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+</style>
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-link"
   {% if page.hero_image %}
     style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;"
   {% endif %}>
   <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
+    {% if page.hero_icon %}
+      <div class="scroll-down-icon"><i class="fas fa-angle-double-down fa-2x"></i></div>
+    {% endif %}    
     <div class="container">
       <h1 align="{{ page.hero_align }}" class="title is-3">{{ page.title }}</h1>
         <p align="{{ page.hero_align }}" class="subtitle is-4">{{ page.subtitle }}</p>
@@ -16,6 +47,7 @@
           <a align="{{ page.hero_align }}" href="{{ page.hero_link | relative_url }}"
              class="button is-link is-large">{{ page.hero_link_text }}</a>
         {% endif %}
+
     </div>
   </div>
 </section>
