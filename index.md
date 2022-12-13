@@ -10,6 +10,7 @@ hero_align    : left
 hero_link     : /software/
 hero_link_text: Our Github
 hero_caption  :
+hero_icon     : True
 show_sidebar  : false
 # hero_height: is-fullheight
 ---
