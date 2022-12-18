@@ -11,7 +11,7 @@ hero_darken: true
 show_sidebar: false
 tags: research computational mathematics
 summary: |-
-  Paper accepted in <b>Journal of Computational Physics</b>
+  Paper accepted in Journal of Computational Physics
   on emulating Spectral Proper Orthogonal Decomposition's 
   latent space.
 ---

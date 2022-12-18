@@ -12,7 +12,7 @@ show_sidebar: false
 tags: hiring research singapore
 summary: |-
   Looking for self-motivated, proactive and creative
-  <b>PhD students</b> and <b>Postdocs</b> to join our group.
+  PhD students and Postdocs to join our group.
 ---
 
 

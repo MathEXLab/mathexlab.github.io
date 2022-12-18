@@ -1,23 +1,20 @@
-<div class="line">
-    <header class="line-header">
-      <p style="line-height: 100%;">
-        <span class="icon-text">
-          <span class="icon"><i class="fas fa-{{post.icon}}"></i> </span>
-          <b> {{ post.date | date: "%b %-d, %Y" }} </b>
-        </span>
-      </p>     
-      <p style="line-height: 50%;"><br></p> 
-      <div class="title is-5">
-        <b> {{ post.title}} </b>
-      </div>
-      <div>
-        {{ post.summary | markdownify }} 
-      </div>
-      <br>
-      <div class="has-text-centered">
-        <a href="{{ site.baseurl }}{{ post.url }}" class="button is-link is-light">Read more
-        </a>
-      </div>
-      <hr>
-    </header>
+<div class="card">
+  <div class="column is-centered is-12">
+  <a class="title is-5"
+    href="{{ site.baseurl }}{{ post.url }}">{{post.title}}
+  </a>
+  </div>
+</div>
+<div class="card is-centered">
+  <div class="column is-centered is-12">
+    {{ post.summary | markdownify }}
+    <div class="has-text-centered">
+      <a href="{{ site.baseurl }}{{ post.url }}"
+        class="button is-link is-light">Read more
+      </a>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
+  </footer>
 </div>

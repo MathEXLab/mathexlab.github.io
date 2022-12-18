@@ -38,7 +38,11 @@
   {% endif %}>
   <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
     {% if page.hero_icon %}
-      <div class="scroll-down-icon" title="Scroll Down"><i class="fas fa-angle-double-down fa-2x"></i></div>
+      <div class="scroll-down-icon" title="Scroll Down">
+        <a href="#homepage-our-research">
+          <i class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+      </div>
     {% endif %}    
     <div class="container">
       <h1 align="{{ page.hero_align }}" class="title is-3">{{ page.title }}</h1>

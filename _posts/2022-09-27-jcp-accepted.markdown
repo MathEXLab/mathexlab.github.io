@@ -11,7 +11,7 @@ hero_darken: true
 show_sidebar: false
 tags: research computational mathematics
 summary: |-
-  Paper accepted in <b>Journal of Computational Physics</b>
+  Paper accepted in Journal of Computational Physics
   on Spectral/hp element methods' linear mechanism
   of (apparent) energy transfer in Fourier space
   for implicit Large-Eddy Simulation (LES).

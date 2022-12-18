@@ -12,7 +12,7 @@ hero_darken: true
 show_sidebar: false
 tags: research computational mathematics
 summary: |-
-  Paper accepted in <b>Geoscientific Model Development (GMD)</b>
+  Paper accepted in Geoscientific Model Development (GMD)
   on efficient ways of implementing variational data assimilation 
   using reduced order models obtained with machine learning.
 ---

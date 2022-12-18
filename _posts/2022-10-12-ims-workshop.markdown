@@ -12,22 +12,19 @@ show_sidebar: false
 hide: true
 tags: research machine-learning mathematics
 summary: |-
-  We are pleased to host several leading speakers from the 
-  machine learning community at our workshop <b>Machine Learning 
-  and Its Applications</b>. The workshop is held at the <b>Institute 
-  for Mathematical Sciences</b> at the <b>National University of 
-  Singapore</b> on <b>10-28 October 2022</b>.
+  We are pleased to host several speakers at NUS for our workshop Machine Learning
+  and Its Applications (10-28 October 2022).
 ---
 
 <html>
   <div class="content">
-  From the 10 to the 28 of October 2022, we are hosting several 
-  leading speakers from the Machine Learning Community at the Institute 
-  for Mathematical Sciences at the National University of Singapore. 
+  From the 10 to the 28 of October 2022, we are hosting several
+  leading speakers from the Machine Learning Community at the Institute
+  for Mathematical Sciences at the National University of Singapore.
   <br><br>
 
-  The aim of this workshop is to bring together researchers in theoretical 
-  and applied machine learning, to share their work and to explore 
+  The aim of this workshop is to bring together researchers in theoretical
+  and applied machine learning, to share their work and to explore
   collaborative opportunities.
 
   <h2>Workshop themes</h2>
@@ -55,11 +52,11 @@ summary: |-
   <br>
   <br>
   For more information, checkout the   
-  <a href="https://ims.nus.edu.sg/events/machine-learning-and-its-applications/" 
+  <a href="https://ims.nus.edu.sg/events/machine-learning-and-its-applications/"
      style="">
     <button class="button is-outlined is-link is-small"> <b>WORKSHOP WEBPAGE</b> </button>
   </a>
   </div>
-  
+
    <br>
 </html>

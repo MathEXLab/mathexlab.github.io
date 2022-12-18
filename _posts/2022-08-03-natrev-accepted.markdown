@@ -11,7 +11,7 @@ hero_darken: true
 show_sidebar: false
 tags: research soft-robotics
 summary: |-
-  Paper accepted in <b>Nature Reviews Physics</b>
+  Paper accepted in Nature Reviews Physics
   on embodied intelligence in the context
   of soft robotics.
 ---

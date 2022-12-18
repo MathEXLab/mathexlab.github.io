@@ -1,5 +1,5 @@
 ---
-layout     : default
+layout: default
 ---
 
 
@@ -16,7 +16,7 @@ layout     : default
       padding: 1px 1px 1px 30px
     }
     ul li {
-      font-size: 120%;
+      font-size: 100%;
       margin-left: 10px;
       list-style-type: circle;
     }
@@ -64,79 +64,182 @@ layout     : default
   }
   </style>
 
-  <div class="columns is-multiline">
-    <!--  ABOUT US -->
-    <div class="column is-9">
+  <div id="homepage-our-research" class="columns is-multiline is-centered">
+    <!-- OUR RESEARCH -->
+    <div class="column is-12 is-centered">
       <div class="content">
-        <h3> About us </h3>
-        <hr>
-        <p align="left" style="font-size:110%;">
-          We develop <b>computational</b> and <b>mathematical models</b>
-          for <b>predicting</b> the <b>behaviour</b> of <b>complex systems</b>
-          in engineering and applied science.
-          Current focus areas
-          <ul>
-            <li> <b>Nonlinear dynamics</b> and <b>complex systems</b> </li>
-            <li> <b>Partial differential equations</b> and <b>numerical analysis</b> </li>
-            <li> <b>Data-driven predictive modeling</b> and <b>machine learning</b> </li>
-          </ul>
-        </p>
-        <p align="left" style="font-size:120%;">
-          Our research team is led by Principal Investigator
-          <a href=/team#mpegim-page-location> <b><u>Dr Gianmarco Mengaldo</u></b>. </a>
-        </p>
+        <h2> Our research </h2>
       </div>
-      <hr>
       <div class="columns is-multiline is-centered">
-        <div class="column is-3">
-          <a href="/research#research-1">
-            <div class="container_for_overlay">
-              <img src="/images/cover_jcp.jpg" alt="" class="image"/>
-              <div class="overlay">
-                <div class="text">Data-driven predictive modeling and machine learning</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="column is-3">
+        <div class="column is-2">
           <a href="/research#research-2">
             <div class="container_for_overlay">
               <img src="/images/cover_natrev.jpg" alt="" class="image"/>
               <div class="overlay">
-                <div class="text">Nonlinear dynamics and complex systems</div>
+                <div class="text">Nonlinear dynamical systems</div>
               </div>
             </div>
           </a>
+          <br>
+          <div style="text-align: center;">
+            <p>Nonlinear dynamical systems</p>
+            <br>
+            <a class="button is-centered is-normal is-link" href="/research#research-2"> Read more</a>
+          </div>
         </div>
-        <div class="column is-3">
+        <div class="column is-2">
+        </div>
+        <div class="column is-2">
           <a href="/research#research-3">
             <div class="container_for_overlay">
               <img src="/images/cover_siamrev.jpg" alt="" class="image"/>
               <div class="overlay">
-                <div class="text">Partial differential equations and numerical analysis</div>
+                <div class="text">Partial differential equations</div>
               </div>
             </div>
           </a>
+          <br>
+          <div style="text-align: center;">
+            <p>Partial differential equations</p>
+            <br>
+            <a class="button is-centered is-normal is-link" href="/research#research-3"> Read more</a>
+          </div>
+        </div>
+        <div class="column is-2">
+        </div>
+        <div class="column is-2">
+          <a href="/research#research-1">
+            <div class="container_for_overlay">
+              <img src="/images/cover_jcp.jpg" alt="" class="image"/>
+              <div class="overlay">
+                <div class="text">Data-driven predictive modeling</div>
+              </div>
+            </div>
+          </a>
+          <br>
+          <div style="text-align: center;">
+            <p>Data-driven predictive modeling</p>
+            <br>
+            <a class="button is-centered is-normal is-link" href="/research#research-1"> Read more</a>
+          </div>
         </div>
       </div>
-      <hr>
       <br>
-    </div>
-
-    <!-- NEWS -->
-    <div class="column is-3">
-      {% include latest-posts.html %}
     </div>
   </div>
 
-<!--
-  <div class="tags">
-      {% for tag in page.tags %}
-        {% include tag.html tag=tag %}
-      {% endfor %}
-  </div> -->
-  <!-- {% unless site.hide_share_buttons %} -->
-  <!-- {% include share-buttons.html %} -->
-  <!-- {% endunless %} -->
+  <div class="columns is-multiline is-centered">
+    <!--  ABOUT US -->
+    <div class="column is-8">
+      <div class="content">
+        <h2> About us </h2>
+        <p align="left" style="font-size:100%;">
+          We adopt an <span class=has-text-link>interdisciplinary 
+          approach</span> for the <span class="has-text-link"> 
+          analysis</span> and <span class="has-text-link">forecast
+          </span> of <span class="has-text-link">complex systems</span>.
+          <br>
+          Understanding and modeling complex systems require
+          integrating different disciplines with <span class="is-link"> 
+          mathematics </span> being the unifying language.
+          <br>
+          <br>
+          To cite <span class="has-text-link"> Galileo Galilei </span>,
+          in <span style="font-style: italic"> Il Saggiatore (1623)</span>:
+          <br>
+          <span class="has-text-link" style="font-style: italic">
+            <q> Philosophy [i.e., natural philosophy or physics] is written
+            in this grand book — I mean the universe — which stands continually
+            open to our gaze, but it cannot be understood unless one first
+            learns to comprehend the language and interpret the characters
+            in which it is written. It is written in the language of mathematics,
+            and its characters are triangles, circles, and other geometrical
+            figures, without which it is humanly impossible to understand
+            a single word of it; without these, one is wandering around
+            in a dark labyrinth. </q>
+          </span>
+          <br>
+          <br>
+          We are also committed to <span class="has-text-link">reproducible</span>, 
+          <span class="has-text-link">open-source</span> and <span class="has-text-link">
+          high-performance</span> software as it is a cornerstone of modern 
+          science. All our codes related to scientific publications are 
+          freely available at .
+        </p>
+        <p align="left" style="font-size:100%;">
+          Our research team is led by Principal Investigator
+          <a href=/team#mpegim-page-location> <b><u>Dr Gianmarco Mengaldo</u></b>. </a>
+        </p>
+      </div>
+      <div class="columns is-multiline is-centered">
+        <div class="column is-3">
+          <video playsinline autoplay muted loop>
+            <source src="videos/video_home_lorenz.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <span style="font-size:90%;">
+            <em><span class="has-text-link">Nonlinear dynamical systems</span>: 
+              Lorenz attractor colored by newly developed indices</em>
+          </span>
+        </div>
+        <div class="column is-3">
+          <video playsinline autoplay muted loop>
+            <source src="videos/video_home_car.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <span style="font-size:90%;">
+            <em><span class="has-text-link">Partial differential equations</span>: 
+              Large-eddy simulation of a road car via high-order 
+              spectral element methods</em>
+          </span>
+        </div>
+        <div class="column is-3">
+          <video playsinline autoplay muted loop>
+            <source src="videos/video_home_spod.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <span style="font-size:90%;">
+            <em><span class="has-text-link">Data-driven predictive modeling</span>: 
+              Spectral proper orthogonal decomposition of high-resolution
+              ERA5 climate reanalysis data</em>
+          </span>
+        </div>
+      </div>
+
+      <div class="content">
+        <h2> Sponsors </h2>
+        <p align="left" style="font-size:100%;">
+          We are supported by a number of grants.
+          We acknolwedge support from <span class="has-text-link">Singapore's 
+            Ministry of Education (MOE)</span>, <span class="has-text-link">
+            National University of Singapore (NUS)</span>, and 
+            <span class="has-text-link">Temasek Laboratory</span> 
+            at NUS.
+        </p>
+        <br>
+        <div class="columns is-multiline is-centered">
+        <div class="column is-3">
+          <figure class="image is-3x3">
+            <img src="/images/logo_moe.png" alt="" style="width:auto;height:140px;"/>
+          </figure>
+        </div>
+        <div class="column is-3">
+        <figure class="image is-3x3">
+          <img src="/images/logo_nus.jpg" alt="" style="width:auto;height:140px;"/>
+        </figure>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS -->
+    <div class="column is-4">
+      <div class="content">
+        <h3> Latest news </h3>
+        <br>
+        {% include latest-posts.html %}
+      </div>
+    </div>
+  </div>
 
 </html>
