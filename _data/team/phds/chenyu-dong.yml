@@ -1,15 +1,16 @@
 id: 2
 user: e0974131
 name: Chenyu DONG
-image: /images/chenyu1.jpg
+image: /images/team_chenyu.jpg
 email: e0974131@u.nus.edu
 scholar: https://scholar.google.com/citations?user=lBWMbC8AAAAJ&hl=en
 rg: https://www.researchgate.net/profile/Chenyu-Dong-6
 linkedin: https://www.linkedin.com/in/chenyu-dong-ba52a8250/
 github: https://github.com/ChenyuDongNUS
 topics:
-  - Complex Systems
-  - Time series
-bio: "Chenyu Dong is a PhD student in Mengaldo's Research Group
-focussing on nonlinear dynamics and complex systems, applied to
-extreme weather analysis and forecasting."
+  - Dynamical systems
+  - Extreme events
+bio: "Chenyu Dong is a PhD student at MatheXLab under the supervision 
+of assistant professor Gianmarco Mengaldo. His research focus 
+is on nonlinear dynamics, applied to extreme weather 
+analysis and forecasting."

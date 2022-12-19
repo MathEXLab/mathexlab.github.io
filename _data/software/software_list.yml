@@ -5,11 +5,11 @@ PySPOD:
       ergodic data. This method has been extensively used
       in a variety of fields, including fluid mechanics,
       climate and weather, among others."
-  - webpage: https://mathe-lab.github.io/PySPOD/
-  - download: https://github.com/mathe-lab/PySPOD
-  - tutorials: https://mathe-lab.github.io/PySPOD/tutorials
+  - webpage: https://mathexlab.github.io/PySPOD/
+  - download: https://github.com/mathexlab/PySPOD
+  - tutorials: https://mathexlab.github.io/PySPOD/tutorials
   - docs: https://readthedocs.org/projects/pyspod/
-  - team: https://mathe-lab.github.io/PySPOD/team
+  - team: https://mathexlab.github.io/PySPOD/team
   - image: /images/software_pyspod.jpg
 
 Nektar++:

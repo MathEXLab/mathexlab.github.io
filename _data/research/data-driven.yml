@@ -3,7 +3,7 @@ name: Data-driven predictive modeling
 # image: /images/hiring.jpg
 video: /videos/research_spod.mov
 caption: "Atmospheric mode identified using
-  <a href='https://mathe-lab.github.io/PySPOD/'> PySPOD</a>
+  <a href='https://mathexlab.github.io/PySPOD/'> PySPOD</a>
   for period = 5 days, using ERA5 reanalysis data"
 summary: "We are developing fast forecasting tools for multivariate
   time series modeling and forecasting. This involve blending

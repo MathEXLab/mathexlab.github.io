@@ -43,6 +43,16 @@ layout: default
   }
   </style>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CG8447D2QW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CG8447D2QW');
+  </script>
+
   <!-- Faculty -->
   <div class="content">
     <h2> Faculty </h2>
@@ -59,36 +69,11 @@ layout: default
         {% capture modal_id %}modal-{{ user_id }}{% endcapture %}
         {% capture close_id %}close-{{ user_id }}{% endcapture %}
         <center>
-          <figure class="image is-128x128">
-            <img id="{{btn_id}}" src="{{member.image}}" alt=""
-                 class="is-clickable" style="border-radius:10%"/>
+          <figure>
+            <img class="has-ratio" width="192" height="192" 
+                 id="{{btn_id}}" src="{{member.image}}" alt=""
+                 style="border-radius:10%"/>
           </figure>
-          <div id="{{modal_id}}" class="modal">
-            <div id="{{close_id}}" class="modal-content">
-              <span class="close">&times;</span><p>{{member.bio}}</p>
-            </div>
-          </div>
-          <script>
-          {
-            let js_btn_id = "{{btn_id | json}}"
-            let js_modal_id = "{{modal_id | json}}"
-            let js_close_id = "{{close_id | json}}"
-            let btn = document.getElementById(js_btn_id);
-            let modal = document.getElementById(js_modal_id);
-            let span = document.getElementById(js_close_id);
-            btn.onclick = function() {
-              modal.style.display = "block";
-            }
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-            window.addEventListener("click", function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            });
-          }
-          </script>
         </center>
       </div>
       <div class="content" style="font-size:120%">
@@ -100,34 +85,36 @@ layout: default
       <div class="content">
         <center>
           {% if member.scholar %}
-          <a class="button is-medium is-google" href="{{ member.scholar }}">
+          <a class="button is-normal is-google" href="{{ member.scholar }}">
             <span class="icon"><img src="/images/icon_scholar.png"></img></span>
           </a>
-          <span style="display:inline-block; width: 1px;"></span>
           {% endif %}
           {% if member.rg %}
-          <a class="button is-medium is-researchgate" href="{{ member.rg }}">
+          <a class="button is-normal is-researchgate" href="{{ member.rg }}">
             <span class="icon"><img src="/images/icon_researchgate.png"></img></span>
           </a>
-          <span style="display:inline-block; width: 1px;"></span>
           {% endif %}
           {% if member.linkedin %}
-          <a class="button is-medium is-linkedin" href="{{ member.linkedin }}">
+          <a class="button is-normal is-linkedin" href="{{ member.linkedin }}">
             <span class="icon"><i class="fab fa-linkedin fa-lg"></i></span>
           </a>
-          <span style="display:inline-block; width: 1px;"></span>
           {% endif %}
           {% if member.github %}
-          <a class="button is-medium is-github" href="{{ member.github }}">
+          <a class="button is-normal is-github" href="{{ member.github }}">
             <span class="icon"><i class="fab fa-github fa-lg"></i></span>
           </a>
           {% endif %}
         </center>
       </div>
-      <hr>
+    </div>
+    <div id="{{member.user}}-page-location" class="column is-8">
+      <div class="content">
+        <p>{{member.bio}}</p>
+      </div>
     </div>
     {% endfor %}
   </div>
+  <br>
   <br>
 
   <!-- PhD students -->
@@ -146,9 +133,10 @@ layout: default
         {% capture modal_id %}modal-{{ user_id }}{% endcapture %}
         {% capture close_id %}close-{{ user_id }}{% endcapture %}
         <center>
-          <figure class="image is-128x128">
-            <img id="{{btn_id}}" src="{{member.image}}" alt="" 
-              class="is-clickable" style="border-radius:10%"/>
+          <figure>
+            <img class="has-ratio" width="164" height="164" 
+                 id="{{btn_id}}" src="{{member.image}}" alt="" 
+                 class="is-clickable" style="border-radius:10%"/>
           </figure>
           <!-- The Modal -->
           <div id="{{modal_id}}" class="modal">
@@ -189,25 +177,22 @@ layout: default
       <div class="content">
         <center>
           {% if member.scholar %}
-          <a class="button is-medium is-google" href="{{ member.scholar }}">
+          <a class="button is-normal is-google" href="{{ member.scholar }}">
             <span class="icon"><img src="/images/icon_scholar.png"></img></span>
           </a>
-          <span style="display:inline-block; width: 1px;"></span>
           {% endif %}
           {% if member.rg %}
-          <a class="button is-medium is-researchgate" href="{{ member.rg }}">
+          <a class="button is-normal is-researchgate" href="{{ member.rg }}">
             <span class="icon"><img src="/images/icon_researchgate.png"></img></span>
           </a>
-          <span style="display:inline-block; width: 1px;"></span>
           {% endif %}
           {% if member.linkedin %}
-          <a class="button is-medium is-linkedin" href="{{ member.linkedin }}">
+          <a class="button is-normal is-linkedin" href="{{ member.linkedin }}">
             <span class="icon"><i class="fab fa-linkedin fa-lg"></i></span>
           </a>
-          <span style="display:inline-block; width: 1px;"></span>
           {% endif %}
           {% if member.github %}
-          <a class="button is-medium is-github" href="{{ member.github }}">
+          <a class="button is-normal is-github" href="{{ member.github }}">
             <span class="icon"><i class="fab fa-github fa-lg"></i></span>
           </a>
           {% endif %}
@@ -220,8 +205,6 @@ layout: default
         </div>
         {% endfor %}
       </center>
-      <hr>
-
     </div>
     {% endfor %}
   </div>
