@@ -2,7 +2,7 @@
 layout: news
 title: NUS-ME Seminar series across disciplines 
 icon: users
-date: 2022-12-19
+date: 2022-12-18
 image: /images/post_nus_me_seminars.jpg
 hero_image: false
 hero_height: is-small
