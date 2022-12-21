@@ -11,7 +11,7 @@ show_sidebar: false
 tags: hiring research singapore
 summary: |-
   Looking for a self-motivated, proactive and creative
-  postdocs to join our group.
+  Postdoctoral Fellow to join our group.
 ---
 
 
@@ -25,7 +25,7 @@ summary: |-
   analysis (ideally the ERA5 and other reanalysis datasets), dynamical 
   system theory, reduced order modelling (including POD, SPOD and Autoencoders), 
   and neural networks. The project is in collaboration with several partner
-  institutions, 
+  institutions: 
   <a href="https://www.ecmwf.int">ECMWF </a>, 
   <a href="https://www.anl.gov"> Argonne National Laboratory</a> (USA), 
   <a href="https://www.lsce.ipsl.fr/Pisp/davide.faranda/">CNRS </a> (France), 

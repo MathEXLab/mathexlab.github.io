@@ -27,11 +27,8 @@ summary: |-
     The project is in collaboration with several 
     partner institutions, including <a href="https://www.unige.ch/en/">
     University of Geneva </a>(Switzerland), <a href="https://www.santannapisa.it/en">
-    Scuola Superiore Sant'Anna </a> (Italy), <a href="https://www.ecmwf.int">
-    ECMWF </a>, <a href="https://www.anl.gov"> Argonne National Laboratory
-    </a> (USA), <a href="https://www.lsce.ipsl.fr/Pisp/davide.faranda/">
-    CNRS </a> (France), and <a href="https://www.cam.ac.uk"> University
-    of Cambridge </a> (United Kingdom), the latter starting from 2023.
+    Scuola Superiore Sant'Anna </a> (Italy), and <a href="https://www.cam.ac.uk"> University of Cambridge </a> (United Kingdom), the latter starting 
+    from 2023.
     The primary objective of the project is to develop novel tool to 
     improve the <b>interpretability</b> of the results provided by 
     neural networks, when applied to <b>time series</b> and
