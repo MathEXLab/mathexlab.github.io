@@ -1,0 +1,39 @@
+---
+layout: news
+title: SIAM CSE Conference 2023
+icon: users
+date: 2023-02-16
+image: /images/siam-cse-2023.jpg
+hero_image: false
+hero_height: is-small
+hero_darken: true
+show_sidebar: false
+tags: hiring research singapore
+summary: |-
+  We are participating to SIAM CSE in Amsterdam from 26th Feb to 3rd March.
+---
+
+
+
+<html>
+  <div class="content">
+  We are participating to SIAM Computational Science and Engineering
+  (SIAM CSE) conference in Amsterdam from 26th Feb to 3rd March 2023.
+  Join our talks:
+  <ul>
+    <li> <a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=124176">
+      Spectral/hp Element Methods for Industry: Some Challenges on the Way </a>
+    </li>
+    <li> <a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=125708">
+      Neural-Network Interpretability for Time Series Classification Task </a>
+    </li>
+    <li> <a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=124307">
+      Dynamics of Weather and Climate on Reduced Manifolds </a>
+    </li>
+    <li> <a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=125815">
+      Stochastic Chaos and Predictability in Laboratory Earthquakes </a>
+    </li>
+  </ul>
+  </div>
+  <br>
+</html>
