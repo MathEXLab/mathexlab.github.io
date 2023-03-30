@@ -39,8 +39,9 @@ summary: |-
   <div class="content"><h4> Plain-language description </h4></div>
   <hr>
   <div class="notification is-info is-light">
-    You can read more here: https://cde.nus.edu.sg/shining-a-light-into-the-black-box-of-ai/
-    and here: https://www.unige.ch/communication/communiques/en/2023/dans-la-boite-noire-des-intelligences-artificielles
+    You can read more here: <a href="https://cde.nus.edu.sg/shining-a-light-into-the-black-box-of-ai/" style="">nus-cde</a>
+    <br>
+    and here: <a href="https://www.unige.ch/communication/communiques/en/2023/dans-la-boite-noire-des-intelligences-artificielles" style="">unige</a>
   </div>
 
   <div class="content"><h4> Abstract </h4></div>
