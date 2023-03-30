@@ -5,7 +5,7 @@ subtitle: Evaluation of post-hoc interpretability methods
   in time-series classification
 icon: print
 date: 2023-03-30
-image: /images/natmach.jpg
+image: /images/cover_natmach.jpg
 hero_image: false
 hero_height: is-small
 hero_darken: true
