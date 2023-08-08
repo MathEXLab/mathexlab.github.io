@@ -1,0 +1,15 @@
+id: 1
+user: zhouf
+name: Zhou FANG
+image: /images/team_zhou.jpg
+email: e1100037@u.nus.edu
+scholar: https://scholar.google.com/citations?user=Cc-4rGwAAAAJ&hl=en&oi=ao
+rg: https://www.researchgate.net/profile/Zhou-Fang-60
+linkedin: https://www.linkedin.com/in/zhou-fang-4aaa2a21b/
+github: https://github.com/ZhousLab
+topics:
+  - Modal decomposition
+  - Extreme events
+bio: "Zhou Fang is a PhD student at MatheXLab under the supervision of 
+assistant professor Gianmarco Mengaldo. Her focus is on coherent pattern
+identification, and data-driven prediction of extreme events."
