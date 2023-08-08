@@ -1,0 +1,17 @@
+id: 1
+user: keaneo
+name: Keane ONG
+image: /images/team_keane.jpg
+email: keane.ongweiyang@u.nus.edu
+scholar:
+rg:
+linkedin: https://www.linkedin.com/in/keane-ong-wei-yang/
+github:
+topics:
+  - Explainable NLP
+  - Finance
+  - Sustainability
+bio: "Keane Ong is a PhD student in the Mathematical and Computational
+Engineering Lab (MathEXLab) under the supervision of assistant professor
+Gianmarco Mengaldo. His focus is on developing and using explainable NLP
+tools for financial forecasting and greenwashing detection."
